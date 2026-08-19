@@ -1,0 +1,553 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =9977
+    ItemSuffix =226
+    Left =2340
+    Top =915
+    Right =12600
+    Bottom =7395
+    TimerInterval =1000
+    Filter ="Déb_MonnaieEnCours = 2"
+    RecSrcDt = Begin
+        0x0a8e07fa4eeee240
+    End
+    RecordSource ="SELECT DISTINCTROW TMP_IRRECOUVRABLE.*, DLookUp(\"Déb_MonnaieEnCours\",\"DEBITEU"
+        "R\",\"Déb_Code='\" & [TIrr_Déb_Code] & \"'\") AS Déb_MonnaieEnCours, DLookUp(\"D"
+        "éb_Date_der_rel\",\"DEBITEUR\",\"Déb_Code='\" & [TIrr_Déb_Code] & \"'\") AS Déb_"
+        "Date_der_rel FROM TMP_IRRECOUVRABLE WHERE (((IIf(IsNull(Formulaires!FrmDebiteurI"
+        "rrecouvrableSelection!TxtDateDebut),True,Formulaires!FrmDebiteurIrrecouvrableSel"
+        "ection!TxtDateDebut<=DLookUp(\"Déb_Date_der_rel\",\"DEBITEUR\",\"Déb_Code='\" & "
+        "[TIrr_Déb_Code] & \"'\")))=True) And ((IIf(IsNull(Formulaires!FrmDebiteurIrrecou"
+        "vrableSelection!TxtDateFin),True,Formulaires!FrmDebiteurIrrecouvrableSelection!T"
+        "xtDateFin>=DLookUp(\"Déb_Date_der_rel\",\"DEBITEUR\",\"Déb_Code='\" & [TIrr_Déb_"
+        "Code] & \"'\")))=True)) ORDER BY TMP_IRRECOUVRABLE.TIrr_Déb_Code; "
+    Caption ="Attestation d'irrécouvrabilité"
+    OnOpen ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =1417
+            LabelX =-236
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+        End
+        Begin ToggleButton
+            TextFontFamily =2
+            Width =283
+            Height =283
+        End
+        Begin FormHeader
+            Height =1950
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =9330
+                    Top =1695
+                    Width =600
+                    Height =240
+                    Name ="EtiTIrr_Editer"
+                    Caption ="Editer"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =73
+                    TextFontFamily =34
+                    Left =720
+                    Top =120
+                    Width =472
+                    Height =472
+                    FontSize =8
+                    TabIndex =1
+                    Name ="CmdImprimer"
+                    Caption ="&i"
+                    StatusBarText ="Imprimer le rapport"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x1000000010000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888000000000008888088888888808088 ,
+                        0x00000000000008080888888bbb88000808888887778808080000000000000880 ,
+                        0x08888888888080808000000000080800880ffffffff080808880f00000f00008 ,
+                        0x8880ffffffff088888880f00000f088888880ffffffff0888888800000000088 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =471
+                    Height =471
+                    Name ="CmdFermer"
+                    Caption ="Fermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =1905
+                    Top =180
+                    Width =4845
+                    Height =405
+                    FontSize =14
+                    ForeColor =8355711
+                    Name ="EtiIrrecouvrableSelectionTitreOmbre"
+                    Caption ="Liste des Débiteurs irrécouvrables"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =1875
+                    Top =135
+                    Width =4845
+                    Height =405
+                    FontSize =14
+                    ForeColor =16777215
+                    Name ="EtiIrrecouvrableSelectionTitre"
+                    Caption ="Liste des Débiteurs irrécouvrables"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =60
+                    Top =1695
+                    Width =1155
+                    Height =240
+                    Name ="EtiTIrr_Déb_Code"
+                    Caption ="Débiteur"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1275
+                    Top =1695
+                    Width =2730
+                    Height =240
+                    Name ="EtiDéb_Nom"
+                    Caption ="Nom"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6600
+                    Top =1695
+                    Width =1335
+                    Height =240
+                    Name ="EtiMontant_m"
+                    Caption ="Montant"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =4065
+                    Top =1695
+                    Width =1260
+                    Height =240
+                    Name ="EtiDéb_Date_Cré"
+                    Caption ="Date Créance"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8910
+                    Top =1695
+                    Width =375
+                    Height =240
+                    Name ="EtiDéb_Situation"
+                    Caption ="Sit."
+                End
+                Begin Label
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =9018
+                    Top =218
+                    Width =720
+                    Height =255
+                    Name ="EtiRien"
+                    Caption ="Rien"
+                    OnClick ="=ToutRien(False)"
+                End
+                Begin Label
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =8268
+                    Top =218
+                    Width =720
+                    Height =255
+                    Name ="EtiTout"
+                    Caption ="Tout"
+                    OnClick ="=ToutRien(True)"
+                End
+                Begin Rectangle
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =215
+                    Left =8163
+                    Top =113
+                    Width =1665
+                    Height =450
+                    Name ="Boîte213"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =2
+                    ListRows =2
+                    Left =6828
+                    Top =453
+                    Width =1101
+                    TabIndex =2
+                    Name ="CmbMonnaie"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Mon_Id, Mon_Nom FROM MONNAIE; "
+                    ColumnWidths ="0;1134"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =85
+                            TextAlign =0
+                            Left =6803
+                            Top =113
+                            Width =1125
+                            Height =240
+                            FontSize =7
+                            BackColor =8421504
+                            Name ="EtiMonnaie"
+                            Caption ="Monnaie :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1262
+                    Top =795
+                    Width =1131
+                    Height =240
+                    TabIndex =3
+                    Name ="TxtDateDebut"
+                    Format ="Short Date"
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =85
+                            Left =120
+                            Top =795
+                            Width =1020
+                            Height =240
+                            FontSize =7
+                            FontWeight =400
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiRech_Fac_DateDebut"
+                            Caption ="Entre le :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1262
+                    Top =1065
+                    Width =1131
+                    TabIndex =4
+                    Name ="TxtDateFin"
+                    Format ="Short Date"
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =85
+                            Left =120
+                            Top =1065
+                            Width =1020
+                            Height =240
+                            FontSize =7
+                            FontWeight =400
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiRech_Fac_DateFin"
+                            Caption ="Et le :"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =82
+                    Left =7770
+                    Top =1260
+                    Width =2055
+                    Height =315
+                    TabIndex =5
+                    Name ="CmdOK"
+                    Caption ="&Rechercher"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =5370
+                    Top =1695
+                    Width =1215
+                    Height =240
+                    Name ="EtiDéb_Date_der_rel"
+                    Caption ="Date Edition"
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =277
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =60
+                    Top =15
+                    Width =1161
+                    ColumnWidth =1815
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtTIrr_Déb_Code"
+                    ControlSource ="TIrr_Déb_Code"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1275
+                    Top =15
+                    Width =2736
+                    TabIndex =1
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtDéb_Nom"
+                    ControlSource ="=dlookup(\"Déb_Nom\",\"DEBITEUR\",\"Déb_Code='\" & [TIrr_Déb_Code] & \"'\")"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =4065
+                    Top =15
+                    Width =1281
+                    ColumnWidth =840
+                    TabIndex =2
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtDéb_Date_Cré"
+                    ControlSource ="=DLookUp(\"Déb_Date_Cré\",\"DEBITEUR\",\"Déb_Code='\" & [TIrr_Déb_Code] & \"'\")"
+                    Format ="Short Date"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =6585
+                    Top =15
+                    Width =1356
+                    ColumnWidth =825
+                    TabIndex =3
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtMontant_m"
+                    ControlSource ="=Round(Nz(DLookUp(\"Déb_Mont_Prin_m1\",\"DEBITEUR\",\"Déb_Code='\" & [TIrr_Déb_C"
+                        "ode] & \"'\"),0),2)-Round(Nz(DSum(\"Enc_Prin_m1\",\"ENCAISSEMENT\",\"Enc_Code_Dé"
+                        "biteur='\" & [TIrr_Déb_Code] & \"'\"),0),2)"
+                    Format ="Standard"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =9480
+                    Top =60
+                    TabIndex =4
+                    Name ="ChkTIrr_Editer"
+                    ControlSource ="TIrr_Editer"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="Yes"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =8910
+                    Top =15
+                    Width =486
+                    TabIndex =5
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtDéb_Situation"
+                    ControlSource ="=DLookUp(\"Déb_Situation\",\"DEBITEUR\",\"Déb_Code='\" & [TIrr_Déb_Code] & \"'\""
+                        ")"
+                End
+                Begin CheckBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =9705
+                    Top =60
+                    TabIndex =6
+                    Name ="ChkTIrr_Deja_Editer"
+                    ControlSource ="TIrr_Deja_Editer"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    Left =7950
+                    Top =15
+                    Width =917
+                    Height =242
+                    FontWeight =700
+                    TabIndex =7
+                    ForeColor =8388608
+                    Name ="TxtMonnaie"
+                    ControlSource ="=DLookUp(\"Mon_Nom\",\"MONNAIE\",\"Mon_Id=\" & [Déb_MonnaieEnCours])"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =5385
+                    Top =15
+                    Width =1161
+                    TabIndex =8
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtDéb_Date_der_rel"
+                    ControlSource ="Déb_Date_der_rel"
+                    Format ="Short Date"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =226
+            BackColor =12632256
+            Name ="PiedFormulaire"
+        End
+    End
+End
+CodeBehindForm
+' See "FrmDebiteurIrrecouvrableSelection.cls"

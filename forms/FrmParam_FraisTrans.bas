@@ -1,0 +1,260 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =7095
+    ItemSuffix =54
+    Left =3390
+    Top =330
+    Right =11535
+    Bottom =5985
+    Filter ="Frt_Grille = '1'"
+    RecSrcDt = Begin
+        0x8dc3248dd7e9e240
+    End
+    RecordSource ="FRAIS_TRANS"
+    Caption ="Frais Transactionnels"
+    OnOpen ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =1417
+            LabelX =-236
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =750
+            BackColor =12632256
+            Name ="EntêteFormulaire1"
+            Begin
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =471
+                    Height =471
+                    Name ="CmdFermer"
+                    Caption ="FermerSimple"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    ColumnCount =2
+                    ListRows =3
+                    ListWidth =2041
+                    Left =2595
+                    Top =240
+                    Width =2040
+                    TabIndex =1
+                    BoundColumn =1
+                    Name ="CmbFrt_Grille"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT FRAIS_TRANS_GRILLE.Frt_Grille_Libellé, FRAIS_TRANS_GRILLE.Frt_Grille FROM"
+                        " FRAIS_TRANS_GRILLE ORDER BY FRAIS_TRANS_GRILLE.Frt_Grille; "
+                    ColumnWidths ="1814;227"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1830
+                            Top =240
+                            Width =690
+                            Height =240
+                            Name ="EtiFrt_Grille"
+                            Caption ="Grille :"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =4725
+                    Top =255
+                    Width =246
+                    Height =231
+                    TabIndex =2
+                    Name ="CmdFraisTransGrille"
+                    Caption ="..."
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x280000000a000000040000000100040000000000200000000000000000000000 ,
+                        0x1000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888800000080080080080000008008008008000000 ,
+                        0x8888888888000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5730
+                    Top =180
+                    Width =1256
+                    Height =347
+                    TabIndex =3
+                    Name ="CmdInverseur"
+                    Caption ="Inverseur"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =2850
+            BackColor =12632256
+            Name ="Détail0"
+            Begin
+                Begin Line
+                    OverlapFlags =85
+                    Left =3540
+                    Top =285
+                    Width =0
+                    Height =2205
+                    Name ="Ligne80"
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    OldBorderStyle =0
+                    Left =330
+                    Top =270
+                    Width =3060
+                    Height =2220
+                    Name ="SFrmParam_FraisTrans1"
+                    SourceObject ="Form.SFrmParam_FraisTrans1"
+                    LinkChildFields ="Frt_Grille"
+                    LinkMasterFields ="TxtFrt_Grille"
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    OldBorderStyle =0
+                    Left =3704
+                    Top =277
+                    Width =3060
+                    Height =2220
+                    TabIndex =1
+                    Name ="SFrmParam_FraisTrans2"
+                    SourceObject ="Form.SFrmParam_FraisTrans2"
+                    LinkChildFields ="Frt_Grille"
+                    LinkMasterFields ="TxtFrt_Grille"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2610
+                    TabIndex =2
+                    Name ="TxtFrt_Grille"
+                    ControlSource ="=[CmbFrt_Grille]"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="PiedFormulaire2"
+        End
+    End
+End
+CodeBehindForm
+' See "FrmParam_FraisTrans.cls"

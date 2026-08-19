@@ -1,0 +1,187 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    RecordLocks =2
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =4529
+    ItemSuffix =18
+    Left =20985
+    Top =2145
+    Right =25875
+    Bottom =6240
+    RecSrcDt = Begin
+        0xf4798b2259a8e140
+    End
+    Caption ="Attestation d'irrécouvrabilité"
+    Begin
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin TextBox
+            Width =1701
+            LabelX =-1701
+        End
+        Begin ComboBox
+            Width =1701
+            LabelX =-1701
+        End
+        Begin FormHeader
+            Height =680
+            BackColor =12632256
+            Name ="EntêteFormulaire0"
+            Begin
+                Begin CommandButton
+                    Cancel = NotDefault
+                    OverlapFlags =85
+                    Left =113
+                    Top =53
+                    Width =456
+                    Height =486
+                    Name ="CmdFermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x00000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =1700
+            BackColor =12632256
+            Name ="Détail0"
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    OverlapFlags =85
+                    Top =165
+                    Width =4215
+                    Height =300
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="EtiIrrecouvrableSelection"
+                    Caption ="Etablir la liste des Débiteurs irrécouvrables ..."
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =1290
+                    Top =1230
+                    Width =1071
+                    TabIndex =1
+                    Name ="TxtDateFin"
+                    Format ="Short Date"
+                    DefaultValue ="=Date()"
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =150
+                            Top =1230
+                            Width =1110
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiDateFin"
+                            Caption ="Jusqu' au :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =1288
+                    Top =615
+                    Width =615
+                    Name ="TxtCli_Code"
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =480
+                            Top =615
+                            Width =780
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiCli_Code"
+                            Caption ="Client :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    Left =1290
+                    Top =885
+                    Width =3239
+                    TabIndex =2
+                    BackColor =12632256
+                    ForeColor =16777215
+                    Name ="TxtCli_Nom"
+                    ControlSource ="=Dlookup(\"Cli_Nom\",\"CLIENT\",\"Cli_Code='\" & [TxtCli_Code] & \"'\")"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =566
+            BackColor =12632256
+            Name ="PiedFormulaire1"
+            Begin
+                Begin CommandButton
+                    Default = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =1695
+                    Top =60
+                    Width =1155
+                    Height =450
+                    FontWeight =300
+                    Name ="CmdOk"
+                    Caption ="OK"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FrmDebiteurIrrecouvrableSelectionEdition.cls"

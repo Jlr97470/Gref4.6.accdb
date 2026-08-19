@@ -1,0 +1,482 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =9751
+    ItemSuffix =214
+    Left =2460
+    Top =300
+    Right =12495
+    Bottom =6285
+    TimerInterval =1000
+    RecSrcDt = Begin
+        0xf5babb6a31eee240
+    End
+    RecordSource ="SELECT TMP_FACTURE.*, DLookUp(\"Cli_MonnaieEnCours\",\"SelClientDebiteurEncaisse"
+        "ment\",\"Enc_Id=\" & [TFac_Enc_Id]) AS Cli_MonnaieEnCours, DLookUp(\"Déb_Code\","
+        "\"SelDebiteurEncaissement\",\"Enc_Id=\" & [TFac_Enc_Id]) AS Déb_Code FROM TMP_FA"
+        "CTURE ORDER BY DLookUp(\"Déb_Code\",\"SelDebiteurEncaissement\",\"Enc_Id=\" & [T"
+        "Fac_Enc_Id]); "
+    Caption ="Edition des factures Clients"
+    OnOpen ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =1417
+            LabelX =-236
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =1095
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =471
+                    Height =471
+                    Name ="CmdFermer"
+                    Caption ="Fermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =1395
+                    Top =165
+                    Width =5310
+                    Height =405
+                    FontSize =14
+                    ForeColor =8355711
+                    Name ="EtiFrmFactureSelectionTitreOmbre"
+                    Caption ="Règlements non facturés"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =1365
+                    Top =120
+                    Width =5310
+                    Height =405
+                    FontSize =14
+                    ForeColor =16777215
+                    Name ="EtiFrmFactureSelectionTitre"
+                    Caption ="Règlements non facturés"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =75
+                    Top =855
+                    Width =1065
+                    Height =240
+                    Name ="EtiDéb_Code"
+                    Caption ="Débiteur"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1185
+                    Top =855
+                    Width =2715
+                    Height =240
+                    Name ="EtiDéb_Nom"
+                    Caption ="Nom"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6705
+                    Top =855
+                    Width =930
+                    Height =240
+                    Name ="EtiEnc_Prin_m"
+                    Caption ="Montant"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5475
+                    Top =855
+                    Width =1185
+                    Height =240
+                    Name ="EtiReg_Date"
+                    Caption ="Date Règlmt"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8685
+                    Top =855
+                    Width =735
+                    Height =240
+                    Name ="EtiEnc_Type"
+                    Caption ="Type"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4245
+                    Top =855
+                    Width =1215
+                    Height =240
+                    Name ="EtiEnc_Date"
+                    Caption ="Date encais."
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    AccessKey =73
+                    TextFontFamily =34
+                    Left =720
+                    Top =120
+                    Width =472
+                    Height =472
+                    FontSize =8
+                    TabIndex =1
+                    Name ="CmdImprimer"
+                    Caption ="&i"
+                    StatusBarText ="Imprimer le rapport"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x1000000010000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888000000000008888088888888808088 ,
+                        0x00000000000008080888888bbb88000808888887778808080000000000000880 ,
+                        0x08888888888080808000000000080800880ffffffff080808880f00000f00008 ,
+                        0x8880ffffffff088888880f00000f088888880ffffffff0888888800000000088 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Label
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =8910
+                    Top =225
+                    Width =720
+                    Height =255
+                    Name ="EtiRien"
+                    Caption ="Rien"
+                    OnClick ="=ToutRien(False)"
+                End
+                Begin Label
+                    SpecialEffect =1
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =3
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =8160
+                    Top =225
+                    Width =720
+                    Height =255
+                    Name ="EtiTout"
+                    Caption ="Tout"
+                    OnClick ="=ToutRien(True)"
+                End
+                Begin Rectangle
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =215
+                    Left =8055
+                    Top =120
+                    Width =1665
+                    Height =450
+                    Name ="RecToutRien"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =2
+                    ListRows =2
+                    Left =6811
+                    Top =453
+                    Width =1131
+                    TabIndex =2
+                    Name ="CmbMonnaie"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Monnaie.Mon_Id, Monnaie.Mon_Nom FROM MONNAIE; "
+                    ColumnWidths ="0;1134"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =85
+                            Left =6810
+                            Top =120
+                            Width =1125
+                            Height =240
+                            FontSize =7
+                            BackColor =8421504
+                            Name ="EtiMonnaie"
+                            Caption ="Monnaie :"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =270
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =90
+                    Top =15
+                    Width =1086
+                    ColumnWidth =1815
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtDéb_Code"
+                    ControlSource ="Déb_Code"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =1185
+                    Top =15
+                    Width =3066
+                    TabIndex =1
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtDéb_Nom"
+                    ControlSource ="=DLookUp(\"Déb_Nom\",\"SelDebiteurEncaissement\",\"Enc_Id=\" & [TFac_Enc_Id])"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =5475
+                    Top =15
+                    Width =1206
+                    ColumnWidth =840
+                    TabIndex =2
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtReg_Date"
+                    ControlSource ="=Dlookup(\"Reg_Date\",\"SelReglementDetailEncaissement\",\"Enc_Id=\" & [TFac_Enc"
+                        "_Id])"
+                    Format ="Short Date"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =87
+                    Left =6690
+                    Top =15
+                    Width =1056
+                    ColumnWidth =825
+                    TabIndex =3
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtEnc_Prin_m"
+                    ControlSource ="=DLookUp(\"Enc_Prin_m1\",\"ENCAISSEMENT\",\"Enc_Id=\" & [TFac_Enc_Id])"
+                    Format ="Standard"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =9465
+                    Top =60
+                    TabIndex =4
+                    Name ="ChkTFac_Flag"
+                    ControlSource ="TFac_Flag"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="No"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =87
+                    TextAlign =2
+                    Left =4260
+                    Top =15
+                    Width =1206
+                    TabIndex =5
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtEnc_Date"
+                    ControlSource ="=DLookUp(\"Enc_Date\",\"ENCAISSEMENT\",\"Enc_Id=\" & [TFac_Enc_Id])"
+                    Format ="Short Date"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =93
+                    Left =8670
+                    Top =15
+                    Width =756
+                    Height =240
+                    TabIndex =6
+                    BackColor =12632256
+                    Name ="TxtEnc_Type"
+                    ControlSource ="=DLookUp(\"Enc_Type\",\"ENCAISSEMENT\",\"Enc_Id=\" & [TFac_Enc_Id])"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    TextAlign =1
+                    BackStyle =0
+                    Left =7755
+                    Top =15
+                    Width =917
+                    Height =242
+                    FontWeight =700
+                    TabIndex =7
+                    ForeColor =8388608
+                    Name ="TxtMon_Nom"
+                    ControlSource ="=DLookUp(\"Mon_Nom\",\"MONNAIE\",\"Mon_Id=\" & [Cli_MonnaieEnCours])"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =585
+            BackColor =12632256
+            Name ="PiedFormulaire"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =70
+                    Left =4755
+                    Top =90
+                    Width =2175
+                    Height =405
+                    Name ="CmdFactureDefinitif"
+                    Caption ="&Facturer && Editer"
+                    OnClick ="[Event Procedure]"
+                    UnicodeAccessKey =70
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =83
+                    Left =2475
+                    Top =90
+                    Width =2176
+                    Height =405
+                    TabIndex =1
+                    Name ="CmdClientListe"
+                    Caption ="&Sélection Client"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FrmClientFactureSelection.cls"

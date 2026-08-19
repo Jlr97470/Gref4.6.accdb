@@ -1,0 +1,775 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AllowEditing = NotDefault
+    RecordSelectors = NotDefault
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =11325
+    ItemSuffix =103
+    Left =1815
+    Top =480
+    Right =13140
+    Bottom =7080
+    Filter ="Déb_Nom='LE ROUX TATIANA' AND AD_CodePostal='14000'"
+    RecSrcDt = Begin
+        0x9f7be8b82dede240
+    End
+    RecordSource ="SELECT DEBITEUR.*, ADRESSE_DEBITEUR.AD_Adr1, ADRESSE_DEBITEUR.AD_Adr2, ADRESSE_D"
+        "EBITEUR.AD_Adr3, ADRESSE_DEBITEUR.AD_Adr4, ADRESSE_DEBITEUR.AD_CodePostal, ADRES"
+        "SE_DEBITEUR.AD_Ville, ADRESSE_DEBITEUR.AD_Tel, ADRESSE_DEBITEUR.AD_Tel2, CODE_GE"
+        "STION.CG_Code_Action FROM CODE_GESTION INNER JOIN (DEBITEUR INNER JOIN ADRESSE_D"
+        "EBITEUR ON DEBITEUR.Déb_Code=ADRESSE_DEBITEUR.AD_Code_Débiteur) ON CODE_GESTION."
+        "CG_Code=DEBITEUR.Déb_Situation; "
+    Caption ="Selection des fiches du débiteurs"
+    OnOpen ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =187
+            Height =187
+        End
+        Begin CheckBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =187
+            Height =187
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =1701
+            Height =255
+            LabelX =-1701
+        End
+        Begin ListBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+        End
+        Begin ComboBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =1701
+            Height =255
+            LabelX =-1701
+        End
+        Begin FormHeader
+            Height =2122
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Top =1882
+                    Width =1140
+                    Height =240
+                    Name ="EtiDéb_Code"
+                    Caption ="Code"
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =120
+                    Top =645
+                    Width =455
+                    Height =455
+                    FontSize =7
+                    FontWeight =400
+                    TabIndex =2
+                    Name ="CmdImprimer"
+                    Caption ="Imprimer"
+                    OnClick ="=ImpVisu(0)"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888888888888 ,
+                        0x8888888888888888888888888888888888888888888000008888000000000000 ,
+                        0x000088888880ffff8880888888888888888008888880ffff8880888888888888 ,
+                        0x888080888880ffff8000000000000000000008088880ff00808888888888bbbb ,
+                        0x888800808880ffff808888888888bbbb888808008880ffff8088888888887777 ,
+                        0x888808808880ff008088888888888888888808880880ffff8000000000000000 ,
+                        0x000008880880ffff8088888888888888888080880880ffff8808888888888888 ,
+                        0x888088080880ffff8880000000000000000008800880ffff888880ffffffffff ,
+                        0xff0880880880fff0888880ffffffffffff0088070880fff08888880ff0000000 ,
+                        0xfff000008880ffff8888880ffffffffffff008888880000088888880ffffffff ,
+                        0xffff088888888888888888880f00000000ff088888888888888888880fffffff ,
+                        0xfffff088888888888888888880fffffffffff088888888888888888880000000 ,
+                        0x0000008888888888000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000
+                    End
+                    FontName ="Small Fonts"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    Left =675
+                    Top =15
+                    Width =10551
+                    Height =1775
+                    BackColor =8421504
+                    Name ="RecRech"
+                End
+                Begin OptionGroup
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =223
+                    Left =675
+                    Top =15
+                    Width =7757
+                    Height =1756
+                    Name ="CadClass"
+                    DefaultValue ="1"
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    AccessKey =86
+                    TextFontFamily =34
+                    Left =105
+                    Top =1185
+                    Width =472
+                    Height =472
+                    FontSize =8
+                    TabIndex =3
+                    Name ="CmdVisualiser"
+                    Caption ="&v"
+                    OnClick ="=ImpVisu(2)"
+                    PictureData = Begin
+                        0x28000000100000000f0000000100040000000000780000000000000000000000 ,
+                        0x1000000010000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff0000000000000088000ffffffffff080000fffffff00007008 ,
+                        0x0ffffff0788707880fffff0788e770880fffff08888780880fffff08e8878088 ,
+                        0x0fffff07ee8770880ffffff0788708880fffffff000088880ffffffffff08888 ,
+                        0x0fffffff000088880fffffff080888880fffffff008888880000000008888888
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =8550
+                    Top =1875
+                    Width =930
+                    Height =240
+                    Name ="EtiDéb_Mont_Prin_m2"
+                    Caption ="Principal"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =1680
+                    Top =105
+                    Width =3576
+                    Height =240
+                    TabIndex =4
+                    Name ="TxtDéb_Nom"
+                    ControlSource ="Déb_Nom"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =840
+                            Top =105
+                            Width =585
+                            Height =210
+                            FontWeight =400
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiDéb_Nom"
+                            Caption ="Nom :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =1680
+                    Top =1080
+                    Width =1011
+                    Height =240
+                    TabIndex =5
+                    Name ="TxtAD_CodePostal"
+                    ControlSource ="AD_CodePostal"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =2745
+                    Top =1080
+                    Width =3216
+                    Height =240
+                    TabIndex =6
+                    Name ="TxtAD_Ville"
+                    ControlSource ="AD_Ville"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =1680
+                    Top =420
+                    Width =4281
+                    TabIndex =7
+                    Name ="TxtAD_Adr1"
+                    ControlSource ="AD_Adr1"
+                    StatusBarText ="Adresse Debiteur Ligne 1"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =795
+                            Top =435
+                            Width =765
+                            Height =240
+                            FontWeight =400
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiAD_Adresse"
+                            Caption ="Adresse :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =6540
+                    Top =420
+                    Width =4311
+                    TabIndex =8
+                    Name ="TxtAD_Adr2"
+                    ControlSource ="AD_Adr2"
+                    StatusBarText ="Adresse Debiteur Ligne 2"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =1680
+                    Top =750
+                    Width =4281
+                    TabIndex =9
+                    Name ="TxtAD_Adr3"
+                    ControlSource ="AD_Adr3"
+                    StatusBarText ="Adresse Debiteur Ligne 3"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =6540
+                    Top =750
+                    Width =4311
+                    TabIndex =10
+                    Name ="TxtAD_Adr4"
+                    ControlSource ="AD_Adr4"
+                    StatusBarText ="Adresse Debiteur Ligne 4"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =1680
+                    Top =1395
+                    TabIndex =11
+                    Name ="TxtAD_Tel"
+                    ControlSource ="AD_Tel"
+                    StatusBarText ="Adresse Debiteur Tel"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =705
+                            Top =1425
+                            Width =915
+                            Height =240
+                            FontWeight =400
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiAD_Tel"
+                            Caption ="Telephone :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =3450
+                    Top =1395
+                    TabIndex =12
+                    Name ="TxtAD_Tel2"
+                    ControlSource ="AD_Tel2"
+                    StatusBarText ="Adresse Debiteur Tel 2"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =1185
+                    Top =1875
+                    Width =1935
+                    Height =240
+                    Name ="EtiCli_Nom"
+                    Caption ="Client"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =9525
+                    Top =1875
+                    Width =840
+                    Height =240
+                    Name ="EtiDéb_Frais_m2"
+                    Caption ="Frais"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =3165
+                    Top =1875
+                    Width =1020
+                    Height =240
+                    Name ="EtiDéb_Date_Chèque"
+                    Caption ="Date C/F"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =5265
+                    Top =1875
+                    Width =960
+                    Height =240
+                    Name ="EtiEnc_Date"
+                    Caption ="Date Enc"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =7245
+                    Top =1875
+                    Width =405
+                    Height =240
+                    Name ="EtiDéb_Code_Enc"
+                    Caption ="Enc."
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =7680
+                    Top =1875
+                    Width =420
+                    Height =240
+                    Name ="EtiDéb_Situation"
+                    Caption ="Sit."
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =8115
+                    Top =1875
+                    Width =390
+                    Height =240
+                    Name ="EtiDéb_niv_relance"
+                    Caption ="Rel."
+                End
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =105
+                    Top =60
+                    Width =471
+                    Height =456
+                    TabIndex =1
+                    Name ="CmdFermer"
+                    Caption ="Fermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =85
+                            Left =4230
+                            Top =1875
+                            Width =1005
+                            Height =240
+                            Name ="EtiDéb_Date_der_rel"
+                            Caption ="Date Cré"
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =6285
+                    Top =1875
+                    Width =930
+                    Height =240
+                    Name ="EtiEnc_Montant_m2"
+                    Caption ="Mont Enc"
+                End
+            End
+        End
+        Begin Section
+            Height =330
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =30
+                    Top =30
+                    Width =1101
+                    Name ="TxtDéb_Code"
+                    ControlSource ="Déb_Code"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4215
+                    Top =30
+                    Width =1011
+                    Height =240
+                    TabIndex =3
+                    Name ="TxtDéb_Date_Cré"
+                    ControlSource ="Déb_Date_Cré"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8550
+                    Top =30
+                    Width =921
+                    Height =240
+                    TabIndex =9
+                    Name ="TxtDéb_Mont_Prin_m2"
+                    ControlSource ="Déb_Mont_Prin_m2"
+                    Format ="Standard"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10950
+                    Top =60
+                    Width =320
+                    Height =245
+                    FontSize =6
+                    FontWeight =400
+                    TabIndex =13
+                    Name ="CmdDetail"
+                    Caption ="OK"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Small Fonts"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1155
+                    Top =30
+                    Width =1971
+                    TabIndex =1
+                    Name ="TxtCli_Nom"
+                    ControlSource ="=Dlookup(\"Cli_Nom\",\"CLIENT\",\"Cli_Code='\" & [Déb_Code_Client] & \"'\")"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9510
+                    Top =30
+                    Width =831
+                    Height =240
+                    TabIndex =10
+                    Name ="TxtDéb_Frais_m2"
+                    ControlSource ="Déb_Frais_m2"
+                    Format ="Standard"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3165
+                    Top =30
+                    Width =1011
+                    Height =240
+                    TabIndex =2
+                    Name ="TxtDéb_Date_Chèque"
+                    ControlSource ="Déb_Date_Chèque"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5265
+                    Top =30
+                    Width =966
+                    Height =240
+                    TabIndex =4
+                    Name ="TxtEnc_Date"
+                    ControlSource ="=DLast(\"Enc_Date\",\"ENCAISSEMENT\",\"Enc_Code_Débiteur='\" & [Déb_Code] & \"'\""
+                        ")"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =7230
+                    Top =30
+                    Width =397
+                    Height =240
+                    TabIndex =6
+                    Name ="TxtDéb_Code_Enc"
+                    ControlSource ="Déb_Code_Enc"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =7665
+                    Top =30
+                    Width =397
+                    Height =240
+                    TabIndex =7
+                    Name ="TxtDéb_Situation"
+                    ControlSource ="Déb_Situation"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =8100
+                    Top =30
+                    Width =397
+                    Height =240
+                    TabIndex =8
+                    Name ="TxtDéb_niv_relance"
+                    ControlSource ="Déb_niv_relance"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6285
+                    Top =30
+                    Width =921
+                    Height =240
+                    TabIndex =5
+                    Name ="TxtEnc_Montant_m2"
+                    ControlSource ="=DLast(\"Enc_Montant_m2\",\"ENCAISSEMENT\",\"Enc_Code_Débiteur='\" & [Déb_Code] "
+                        "& \"'\")"
+                    Format ="Standard"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =2
+                    TextAlign =1
+                    TextFontFamily =2
+                    BackStyle =0
+                    Left =10350
+                    Top =30
+                    Width =288
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =11
+                    BackColor =12632256
+                    ForeColor =6723891
+                    Name ="TxtDéb_Observation"
+                    ControlSource ="=IIf([Déb_Observation] Is Null,\"\",\"ü\")"
+                    FontName ="Wingdings"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =2
+                    TextAlign =1
+                    TextFontFamily =2
+                    BackStyle =0
+                    Left =10650
+                    Top =30
+                    Width =273
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =12
+                    BackColor =12632256
+                    ForeColor =6723891
+                    Name ="TxtDéb_Phoning"
+                    ControlSource ="=IIf([Déb_Phoning] Is Null,\"\",\"v\")"
+                    FontName ="Wingdings"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =540
+            BackColor =12632256
+            Name ="PiedFormulaire"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8460
+                    Width =1131
+                    Height =240
+                    Name ="TxtTotalDéb_Mont_Prin_m2"
+                    ControlSource ="=Sum(IIf([CG_Code_Action]<=2 Or ([CG_Code_Action]=3 And Len([Déb_Code_Enc])=2),["
+                        "Déb_Mont_Prin_m2],0))"
+                    Format ="Standard"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9630
+                    Width =1131
+                    Height =240
+                    TabIndex =1
+                    Name ="TxtTotalDéb_Frais_m2"
+                    ControlSource ="=Sum(IIf([CG_Code_Action]<=2 Or ([CG_Code_Action]=3 And Len([Déb_Code_Enc])=2),["
+                        "Déb_Frais_m2],0))"
+                    Format ="Standard"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8460
+                    Top =300
+                    Width =1131
+                    Height =240
+                    TabIndex =2
+                    Name ="TxtTotal"
+                    ControlSource ="=[TxtTotalDéb_Mont_Prin_m2]+[TxtTotalDéb_Frais_m2]"
+                    Format ="Standard"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =7260
+                    Top =300
+                    Width =1155
+                    Height =240
+                    Name ="EtiTotal"
+                    Caption ="Total :"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FrmDebiteurPhoningListe.cls"

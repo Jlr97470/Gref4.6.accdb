@@ -1,0 +1,191 @@
+﻿{
+  "Info": {
+    "Class": "clsDbDocument",
+    "Description": "Database Documents Properties (DAO)"
+  },
+  "Items": {
+    "Databases": {
+      "SummaryInfo": {
+        "Author": "Cabinet",
+        "Company": "GREF",
+        "Title": "Gref2003c"
+      }
+    },
+    "Tables": {
+      "ADRESSE_CLIENT": {
+        "Description": "Adresse Des Clients"
+      },
+      "ADRESSE_DEBITEUR": {
+        "Description": "Adresse Des Debiteurs"
+      },
+      "ADRESSE_TYPE": {
+        "Description": "Type D'Adresse"
+      },
+      "ARCHIVE_ADRESSE_DEBITEUR": {
+        "Description": "Archive Adresse Des Debiteurs"
+      },
+      "ARCHIVE_DEBITEUR": {
+        "Description": "Archive Des Debiteurs"
+      },
+      "ARCHIVE_ENCAISSEMENT": {
+        "Description": "Archive Des Encaissements"
+      },
+      "BASE": {
+        "Description": "Chemin Base"
+      },
+      "CLIENT": {
+        "Description": "Clients"
+      },
+      "CLIENT_CONTRAT": {
+        "Description": "Historique Des Contrats Clients"
+      },
+      "CLIENT_GROUPE": {
+        "Description": "Groupes Des Clients"
+      },
+      "CLIENT_TYPE": {
+        "Description": "Types De Clients"
+      },
+      "CODE_ACTION": {
+        "Description": "Code Des Actions"
+      },
+      "CODE_GESTION": {
+        "Description": "Code De Gestion"
+      },
+      "CODE_GROUPE": {
+        "Description": "Code Des Groupes"
+      },
+      "DEBITEUR": {
+        "Description": "Debiteurs"
+      },
+      "DEBITEUR_ECHEANCE": {
+        "Description": "Echeances CB Des Debiteurs"
+      },
+      "ENCAISSEMENT": {
+        "Description": "Encaissements"
+      },
+      "ENCAISSEMENT_MODE": {
+        "Description": "Modes D'Encaissements"
+      },
+      "ENCAISSEMENT_TYPE": {
+        "Description": "Types D'Encaissements"
+      },
+      "ENCAISSEUR": {
+        "Description": "Encaisseur"
+      },
+      "FACTURE": {
+        "Description": "Factures"
+      },
+      "FACTURE_DETAIL": {
+        "Description": "Details Des Factures"
+      },
+      "FRAIS": {
+        "Description": "Grilles De Frais"
+      },
+      "FRAIS_GRILLE": {
+        "Description": "Libellés Des Grilles De Frais"
+      },
+      "FRAIS_TRANS": {
+        "Description": "Grilles De Frais De Transmission"
+      },
+      "FRAIS_TRANS_GRILLE": {
+        "Description": "Libellés Des Grilles De Frais De Transmission"
+      },
+      "GROUPE": {
+        "Description": "Groupes Des Clients"
+      },
+      "MENU": {
+        "Description": "Menu"
+      },
+      "MONNAIE": {
+        "Description": "Monnaies"
+      },
+      "MOTIF_IMPAYE": {
+        "Description": "Grilles Des Motifs Des Impayes"
+      },
+      "MOTIF_IMPAYE_GRILLE": {
+        "Description": "Libellés Des Grilles Des Motifs Impayés"
+      },
+      "OPERATEUR": {
+        "Description": "Operateurs"
+      },
+      "PARAMETRE_GREF": {
+        "Description": "Parametre Interne GREF"
+      },
+      "REGLEMENT": {
+        "Description": "Reglements"
+      },
+      "REGLEMENT_DETAIL": {
+        "Description": "Details Des Reglements"
+      },
+      "RELANCE": {
+        "Description": "Relances"
+      },
+      "REPRESENTANT": {
+        "Description": "Representants"
+      },
+      "SelClientDebiteur": {
+        "Description": "Selection Clients Debiteurs"
+      },
+      "SelClientDebiteurEncaissement": {
+        "Description": "Selection Clients Debiteurs Encaissements"
+      },
+      "SelDebiteurAdresse": {
+        "Description": "Selection Debiteurs Adresses"
+      },
+      "SelDebiteurCodeGestion": {
+        "Description": "Selection Debiteurs Code Gestion"
+      },
+      "SelDebiteurCodeGestionEncaissement": {
+        "Description": "Selection Debiteurs Code Gestion Encaissements"
+      },
+      "SelDebiteurEncaissement": {
+        "Description": "Selection Debiteurs Encaissements"
+      },
+      "SelDebiteurEncaissementIncorrect": {
+        "Description": "Selection Debiteurs Encaissements Incorrects"
+      },
+      "SelEncaissementTypeMode": {
+        "Description": "Selection Encaissements Types Modes"
+      },
+      "SelReglementDetail": {
+        "Description": "Selection Des Details Reglements"
+      },
+      "SelReglementDetailEncaissement": {
+        "Description": "Selection Des Details Reglements Encaissements"
+      },
+      "SelRelanceNbDebiteur": {
+        "Description": "Relances Nb Debiteurs"
+      },
+      "TABLE": {
+        "Description": "Tables"
+      },
+      "TAUX": {
+        "Description": "Grilles De Taux"
+      },
+      "TAUX_GRILLE": {
+        "Description": "Libellés Grille De Taux"
+      },
+      "TMP_CLIENT": {
+        "Description": "Selection De Clients Temporaire"
+      },
+      "TMP_DEBITEUR": {
+        "Description": "Selection De Debiteurs Temporaire"
+      },
+      "TMP_FACTURE": {
+        "Description": "Selection D'Encaissements A Facturé Temporaire"
+      },
+      "TMP_IRRECOUVRABLE": {
+        "Description": "Selection De Debiteurs Irrecouvrables Temporaire"
+      },
+      "TMP_REGLEMENT": {
+        "Description": "Selection D'Encaissements A Reglé Temporaire"
+      },
+      "TMP_RELANCE": {
+        "Description": "Selection De Debiteurs A Relancé Temporaire"
+      },
+      "TMP_REPRESENTANT_CLIENT": {
+        "Description": "Selection De Clients Par Representants Temporaire"
+      }
+    }
+  }
+}

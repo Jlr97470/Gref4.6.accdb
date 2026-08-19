@@ -1,0 +1,356 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =6810
+    ItemSuffix =42
+    Left =795
+    Top =285
+    Right =7965
+    Bottom =5670
+    RecSrcDt = Begin
+        0xf3c6ab68cee9e240
+    End
+    RecordSource ="SELECT DISTINCTROW CODE_GESTION.* FROM CODE_GESTION ORDER BY CODE_GESTION.CG_Cod"
+        "e; "
+    Caption ="Listes des Codes de Gestion"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    DatasheetBackColor12 =16777215
+    ShowPageMargins =0
+    DisplayOnSharePointSite =0
+    AllowLayoutView =0
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+            ShowDatePicker =1
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =1417
+            LabelX =-236
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin FormHeader
+            Height =907
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =113
+                    Top =680
+                    Width =534
+                    Height =227
+                    FontSize =7
+                    Name ="EtiCG_Code"
+                    Caption ="Code"
+                    FontName ="Small Fonts"
+                End
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =471
+                    Height =471
+                    Name ="CmdFermer"
+                    Caption ="Fermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =755
+                    Top =675
+                    Width =2655
+                    Height =225
+                    FontSize =7
+                    Name ="EtiCG_Libellé"
+                    Caption ="Libellé"
+                    FontName ="Small Fonts"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3465
+                    Top =675
+                    Width =600
+                    Height =225
+                    FontSize =7
+                    Name ="EtiCG_Code_Action"
+                    Caption ="Action"
+                    FontName ="Small Fonts"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5130
+                    Top =675
+                    Width =645
+                    Height =225
+                    FontSize =7
+                    Name ="EtiCG_Code_Groupe"
+                    Caption ="Groupe"
+                    FontName ="Small Fonts"
+                End
+            End
+        End
+        Begin Section
+            Height =255
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =113
+                    Width =546
+                    Name ="TxtCG_Code"
+                    ControlSource ="CG_Code"
+
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =750
+                    Width =2661
+                    TabIndex =1
+                    Name ="TxtCG_Libellé"
+                    ControlSource ="CG_Libellé"
+
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =5
+                    ListWidth =1247
+                    Left =3495
+                    Width =1607
+                    TabIndex =2
+                    Name ="CmbCG_Code_Action"
+                    ControlSource ="CG_Code_Action"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT CODE_ACTION.* FROM CODE_ACTION; "
+                    ColumnWidths ="0;1247"
+                    DefaultValue ="1"
+
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =5
+                    ListWidth =1247
+                    Left =5160
+                    Width =1607
+                    TabIndex =3
+                    Name ="CmbCG_Code_Groupe"
+                    ControlSource ="CG_Code_Groupe"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT CODE_GROUPE.* FROM CODE_GROUPE; "
+                    ColumnWidths ="0;1247"
+                    DefaultValue ="1"
+
+                End
+            End
+        End
+        Begin FormFooter
+            Height =340
+            BackColor =12632256
+            Name ="PiedFormulaire"
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =720
+                    Top =45
+                    Width =4140
+                    Height =225
+                    FontSize =7
+                    FontWeight =400
+                    Name ="EtiParam_Code_Gestion"
+                    Caption ="NB : Ne pas modifier le code des Atermoiements (40)."
+                    FontName ="Small Fonts"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FrmParam_Code_Gestion.cls"

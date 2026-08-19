@@ -1,0 +1,278 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =4650
+    ItemSuffix =89
+    Left =5220
+    Top =960
+    Right =9870
+    Bottom =2655
+    RecSrcDt = Begin
+        0x2a6e8d2eaee5e240
+    End
+    Caption ="Rechercher un Débiteur"
+    OnLoad ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Rectangle
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            Width =1701
+            LabelX =-1701
+        End
+        Begin ComboBox
+            Width =1701
+            LabelX =-1701
+        End
+        Begin FormHeader
+            Height =1695
+            BackColor =12632256
+            Name ="EntêteFormulaire0"
+            Begin
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =471
+                    Height =471
+                    TabIndex =5
+                    Name ="CmdFermer"
+                    Caption ="Fermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =93
+                    Left =735
+                    Top =75
+                    Width =3771
+                    Height =1580
+                    BackColor =8421504
+                    Name ="RecFicheDebiteurRechercher"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =2666
+                    Top =302
+                    Width =1131
+                    Name ="TxtDéb_Code"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =1357
+                            Top =302
+                            Width =1230
+                            Height =240
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiDéb_Code"
+                            Caption ="Code  :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =1425
+                    Top =637
+                    Width =2376
+                    TabIndex =1
+                    Name ="TxtDéb_Nom"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =847
+                            Top =637
+                            Width =555
+                            Height =240
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiDéb_Nom"
+                            Caption ="Nom :"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =223
+                    Left =3907
+                    Top =90
+                    Width =525
+                    Height =195
+                    BackColor =8421504
+                    ForeColor =65535
+                    Name ="EtiClass"
+                    Caption ="Class."
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =2664
+                    Top =982
+                    Width =1131
+                    TabIndex =2
+                    Name ="TxtDéb_Mont_Prin_m"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =1297
+                            Top =982
+                            Width =1290
+                            Height =240
+                            FontSize =7
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiDéb_Mont_Prin_m"
+                            Caption ="Créance :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =3399
+                    Top =1327
+                    Width =397
+                    TabIndex =3
+                    Name ="TxtDéb_Code_Enc"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =1972
+                            Top =1327
+                            Width =1365
+                            Height =240
+                            FontSize =7
+                            BackColor =8421504
+                            ForeColor =16777215
+                            Name ="EtiDéb_Code_Enc"
+                            Caption ="Code Encaisseur :"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    Default = NotDefault
+                    OverlapFlags =85
+                    Left =120
+                    Top =690
+                    Width =465
+                    Height =960
+                    TabIndex =4
+                    Name ="CmdOK"
+                    Caption ="OK"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin OptionGroup
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =215
+                    Left =3930
+                    Top =225
+                    Width =437
+                    Height =1365
+                    TabIndex =6
+                    Name ="CadClass"
+                    DefaultValue ="0"
+                    Begin
+                        Begin OptionButton
+                            SpecialEffect =2
+                            OverlapFlags =215
+                            Left =4080
+                            Top =360
+                            OptionValue =0
+                            Name ="Option81"
+                        End
+                        Begin OptionButton
+                            SpecialEffect =2
+                            OverlapFlags =215
+                            Left =4080
+                            Top =690
+                            OptionValue =1
+                            Name ="Option83"
+                        End
+                        Begin OptionButton
+                            SpecialEffect =2
+                            OverlapFlags =215
+                            Left =4080
+                            Top =1020
+                            OptionValue =2
+                            Name ="Option85"
+                        End
+                        Begin OptionButton
+                            SpecialEffect =2
+                            OverlapFlags =215
+                            Left =4080
+                            Top =1350
+                            OptionValue =3
+                            Name ="Option87"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =20
+            BackColor =12632256
+            Name ="Détail0"
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="PiedFormulaire1"
+        End
+    End
+End
+CodeBehindForm
+' See "FrmFicheDebiteurRechercher.cls"

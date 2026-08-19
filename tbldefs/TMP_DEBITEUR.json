@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "TMP_DEBITEUR",
+    "Connect": ";DATABASE=rel:TGREF.accdb",
+    "SourceTableName": "TMP_DEBITEUR",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[TDéb_Code]"
+  }
+}

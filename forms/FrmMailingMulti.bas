@@ -1,0 +1,867 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =1
+    PictureAlignment =5
+    PictureSizeMode =1
+    DatasheetGridlinesBehavior =3
+    Cycle =1
+    GridY =10
+    Width =10770
+    ItemSuffix =26
+    Left =1545
+    Top =120
+    Right =12660
+    Bottom =9060
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x80daf79aee72e240
+    End
+    Caption ="Extractions Divers"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            BackStyle =0
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="MS Sans Serif"
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+            Width =1701
+            LabelX =-1701
+        End
+        Begin ListBox
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+        End
+        Begin FormHeader
+            Height =570
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin CommandButton
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    TextFontFamily =2
+                    Left =105
+                    Top =75
+                    Width =471
+                    Height =456
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="CmdFermer"
+                    Caption ="Fermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888
+                    End
+                    FontName ="System"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =6390
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin ComboBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =95
+                    ColumnCount =3
+                    ListWidth =11340
+                    Left =555
+                    Top =405
+                    Width =4530
+                    Height =285
+                    BoundColumn =-1
+                    Name ="CmbTableRequete"
+                    RowSourceType ="Value List"
+                    RowSource ="CDP2002CHAUDIERESREMONTEES;;TABLE;CDP2002RESULTATS;;TABLE;MSysACEs;;TABLE;MSysOb"
+                        "jects;;TABLE;MSysQueries;;TABLE;MSysRelationships;;TABLE;TBLCADEAUXACHATS;Liste "
+                        "Des Achats De Cadeaux;TABLE;TBLCADEAUXARTICLES;Liste Des Articles Cadeaux;TABLE;"
+                        "TBLCHAUDIERESARTICLES;Liste Des Articles Chaudiéres;TABLE;TBLCHAUDIERESREMONTEES"
+                        ";Liste Des Remontées De Chaudiéres;TABLE;TBLCIVILITES;Liste Des Civilités;TABLE;"
+                        "TBLCONTACTS;Liste Des Contacts;TABLE;TBLCONTACTSFONCTIONS;Liste Des Fonctions De"
+                        "s Contacts;TABLE;TBLDEPARTEMENTS;Liste Des Departements;TABLE;TBLEXERCICES;Liste"
+                        " Des Exercices;TABLE;TBLFICHIERS;Liste Des Fichiers;TABLE;TBLMACHINES;Liste Des "
+                        "Machines Connectées;TABLE;TBLMACHINESMESSAGES;Liste Des Messages Des Utilisateur"
+                        ";TABLE;TBLMENU;Liste Du Menu;TABLE;TBLMOUVEMENTS;Liste Des Mouvements;TABLE;TBLM"
+                        "OUVEMENTSNATURES;Liste Des Natures Des Mouvements;TABLE;TBLPARAMETRES;Liste Des "
+                        "Parametres;TABLE;TBLPARAMETRESGENERALS;Liste Des Parametres Generals;TABLE;TBLSE"
+                        "MESTRES;Liste Des Semestres;TABLE;TBLSOCIETES;Liste Des Societes;TABLE;TBLSOCIET"
+                        "ESADHERENTS;Liste Des Societes Adherents;TABLE;TBLSOCIETESRESULTATS;Liste Des Re"
+                        "sultats Des Societes;TABLE;TBLSOCIETESRESULTATS2003;Liste Des Resultats 2003 Des"
+                        " Societes (Bonus Rea/ISO) A Date;TABLE;TBLSOCIETESTYPES;Liste Des Types Des Soci"
+                        "etes;TABLE;TBLVILLES;Liste Des Villes;TABLE;AnaSocietesResultats;Analyse Des Res"
+                        "ultats Des Societes Remontees De Chaudieres Par Semestres\015\012Utiliser Par:\015"
+                        "\012- UniSocietesResultats;REQUETE;AnaSocietesSTAAdhResultatsChdExercices;Analys"
+                        "e Des Resultats Des Societes STA Adh Total Des Remontees De Chaudieres Par Exerc"
+                        "ices\015\012Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultatsExercicesDet"
+                        "ailler;REQUETE;AnaSocietesSTAAdhResultatsChdGammesSemestresRelevesDebut;Analyse "
+                        "Des Resultats Des Societes STA Adh Total Des Remontees De Chaudieres Par Gammes "
+                        "Par Semestres A Date Debut Releves;REQUETE;AnaSocietesSTAAdhResultatsChdGammesSe"
+                        "mestresRelevesFin;Analyse Des Resultats Des Societes STA Adh Total Des Remontees"
+                        " De Chaudieres Par Gammes Par Semestres A Date Releves;REQUETE;AnaSocietesSTAAdh"
+                        "ResultatsChdSemestres;Analyse Des Resultats Des Societes STA Adh Total Des Remon"
+                        "tees De Chaudieres Par Semestres\015\012Utiliser Par :\015\012- SelSocDRConATCSo"
+                        "cSTAAdhResultatsSemestresDetailler;REQUETE;AnaSocietesSTAAdhResultatsISOExercice"
+                        "s;Analyse Des Resultats Des Societes STA Adh Total ISO Des Remontees De Chaudier"
+                        "es Par Exercices\015\012Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultats"
+                        "ExercicesDetailler;REQUETE;AnaSocietesSTAAdhResultatsISOSemestres;Analyse Des Re"
+                        "sultats Des Societes STA Adh Total ISO Des Remontees De Chaudieres Par Semestres"
+                        "\015\012Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultatsSemestresDetaill"
+                        "er;REQUETE;AnaSocietesSTAAdhResultatsISOSPLITSemestres;Analyse Des Resultats Des"
+                        " Societes STA Adh Total ISOSPLIT Des Remontees De Chaudieres Par Semestres\015\012"
+                        "Utiliser Par :\015\012- SelMailingSocDRConATCSocSTAAdhConTAInsResSemestresDetail"
+                        "lerSPLIT;REQUETE;AnaSocietesSTAAdhResultatsTHEMAExercices;Analyse Des Resultats "
+                        "Des Societes STA Adh Total THEMA Des Remontees De Chaudieres Par Semestres\015\012"
+                        "Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultatsExercicesDetailler;REQUE"
+                        "TE;AnaSocietesSTAAdhResultatsTHEMASemestres;Analyse Des Resultats Des Societes S"
+                        "TA Adh Total THEMA Des Remontees De Chaudieres Par Semestres\015\012Utiliser Par"
+                        " :\015\012- SelSocDRConATCSocSTAAdhResultatsSemestresDetailler;REQUETE;SelCadeau"
+                        "xArticles;Selection Des Cadeaux, Articles\015\012Utiliser Par:\015\012- FrmFiche"
+                        "Societes;REQUETE;SelChaudieresArticlesSemestres;Selection Des Remontees De Chaud"
+                        "ieres, Articles, Semestres\015\012Utiliser Par:\015\012- FrmFicheSocietes;REQUET"
+                        "E;SelChd716;;REQUETE;SelContactsFonctions;Selection Des Contacts, Fonctions\015\012"
+                        "Utiliser Par :\015\012- FrmFicheSocietes;REQUETE;SelContactsInscrit;Selection De"
+                        "s Contacts Inscrit\015\012Utiliser Par :\015\012- SelEtatSocietesSTAAdhConTAInsS"
+                        "oldesReleves\015\012- SelMailingSocDRConATCSocSTAAdhConTAInsResISOSoldesDetaille"
+                        "r\015\012- SelMailingSocietesSTAContactsTAInsChaudieresRemontees\015\012- SelMai"
+                        "lingSocDRConATCSocSTAAdhConT;REQUETE;SelContactsNonInscrit;Selection Des Contact"
+                        "s Non Inscrits;REQUETE;SelContactsVilles;Selection Des Contacts, Villes\015\012U"
+                        "tiliser Par :\015\012- FrmRecherche\015\012- FrmLstContacts;REQUETE;SelEtatRelev"
+                        "esSocietesSoldesISOExercices;Selection Des Societes, Soldes ISO Par Exercices A "
+                        "Date De Releves\015\012Utiliser Par :\015\012- SEtaSocietesSoldesRelevesISOExerc"
+                        "ices;REQUETE;SelEtatRelevesSocietesSoldesMouvements;Selection Des Societes, Mouv"
+                        "ements Detailler A Date Releves\015\012Utiliser Par\015\012- SEtaSocietesSoldesR"
+                        "elevesMouvements;REQUETE;SelEtatRelevesSocietesSoldesSTAAdhConTAIns;Selection De"
+                        "s Societes STA Adh, Contacts Inscrits, Soldes A Date Releves\015\012Utiliser Par"
+                        ":\015\012- EtaSocietesSTAAdhConTAInsSoldesReleves;REQUETE;SelFichiersDetailler;S"
+                        "election Des Fichiers Detailler;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAIns;L"
+                        "iste Des STA Adherents;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAInsResISOSolde"
+                        "sDetailler;Situation Des STA;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAInsResSe"
+                        "mestresDetailler;Situation Des STA;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAIn"
+                        "sResSemestresDetaillerSPLIT;Situation Des STA;REQUETE;SelMailingSocDRConATCSocST"
+                        "AAdhConTAInsResultatsDetailler;RESULTATS MENSUELS ARMELLE;REQUETE;SelMailingSocD"
+                        "RConATCSocSTAAdhConTAInsResultatsDetSPLIT;RESULTATS MENSUELS ARMELLE (SPLIT);REQ"
+                        "UETE;SelMailingSocietesSTAAdhConTAIns;Liste Des STA Adherents;REQUETE;SelMailing"
+                        "SocietesSTAContactsTAInsCadeauxAchats;Achats Cadeaux;REQUETE;SelMailingSocietesS"
+                        "TAContactsTAInsChaudieresRemontees;Remontées Chaudiéres;REQUETE;SelMouvementsCad"
+                        "eaux;Selection Des Mouvements Cadeaux\015\012Utiliser Par:\015\012- ModGestionMo"
+                        "uvements;REQUETE;SelMouvementsChaudieres;Selection Des Mouvements Chaudieres\015"
+                        "\012Utiliser Par:\015\012- ModGestionMouvements;REQUETE;SelMouvementsNaturesExer"
+                        "cices;Selection Des Mouvements, Natures Et Exercices\015\012Utiliser Par:\015\012"
+                        "- FrmFicheSocietes;REQUETE;SelMouvementsRegularisationCheques;Selection Des Mouv"
+                        "ements Regularisation Et Cheque\015\012Utiliser Par :\015\012- FrmSaisieRegulari"
+                        "sationCheques;REQUETE;SelMouvementsUtilsBonusISO;Selection Des Mouvements Utilis"
+                        "ation Des Bonus ISO\015\012Utiliser Par :\015\012- FrmSaisieBonusAnimation;REQUE"
+                        "TE;SelParametresDetailler;Selection Des Parametres Detailler;REQUETE;SelParametr"
+                        "esGeneralsDetailler;Selection Des Parametres Generals Detailler;REQUETE;SelSocDR"
+                        "ConATCAdhResultatsExercicesDetailler;Selection Des Societes DR, Contacts ATC, Re"
+                        "sultats Des Remontees De Chaudieres Des Societes Adh Par Exercices Detailler\015"
+                        "\012Utiliser Par :\015\012- Site Web;REQUETE;SelSocDRConATCAdhResultatsSemestres"
+                        "Detailler;Selection Des Societes DR, Contacts ATC, Resultats Des Remontees De Ch"
+                        "audieres Des Societes Adh Par Semestres Detailler;REQUETE;SelSocDRConATCSocSTAAd"
+                        "hConTAInsResultatsBonus2003Detailler;Selection Des Societes DR, Contacts ATC, So"
+                        "cietes STA Adh, Contacts TA Inscrits, Resultats 2003 Bonus Et ISO\015\012Utilise"
+                        "r Par :\015\012- SFrmFicheSocietesResultatsSoldesExercices\015\012- FrmSaisieReg"
+                        "ularisationCheques\015\012- FrmSaisieCadeauxAchats;REQUETE;SelSocDRConATCSocSTAA"
+                        "dhConTAInsResultatsExercicesDetailler;Selection Des Societes DR, Contacts ATC, S"
+                        "ocietes STA Adh, Contacts TA Inscrits, Resultats Des Remontees De Chaudieres Par"
+                        " Exercices Detailler\015\012Utiliser Par:\015\012- SelSocDRConATCAdhResultatsExe"
+                        "rcicesDetailler\015\012- Site Web;REQUETE;SelSocDRConATCSocSTAAdhConTAInsResulta"
+                        "tsSemestresDetailler;Selection Des Societes DR, Contacts ATC, Societes STA Adh, "
+                        "Contacts TA Inscrits, Resultats Des Remontees De Chaudieres Par Semestres Detail"
+                        "ler\015\012Utiliser Par:\015\012- SelSocDRConATCAdhResultatsSemestresDetailler;R"
+                        "EQUETE;SelSocDRConATCSocSTAAdhConTAInsSoldesExercicesDetailler;Selection Des Soc"
+                        "ietes DR, Contacts ATC, Societes STA Adh, Contacts TA Inscrits, Soldes Par Exerc"
+                        "ices Detailler\015\012Utiliser Par:\015\012- SelSocDRConATCSocATCAdhConTAInsResu"
+                        "ltatsBonus2003Detailler;REQUETE;SelSocietesAdherentsExercices;Selection Des Adhe"
+                        "sions Des Societes Par Exercices;REQUETE;SelSocietesDRContactsATC;Selection Des "
+                        "Societes DR, Contacts ATC\015\012Utiliser Par :\015\012- SelMailingSocDRConATCSo"
+                        "cSTAAdhConTAInsResISOSoldesDetailler\015\012- SelMailingSocDRConATCSocSTAAdhConT"
+                        "AInsResSemestresDetailler\015\012- SelMailingSocDRConATCSocSTAAdhConTAInsResulta"
+                        "ts20022003Detailler\015\012- ;REQUETE;SelSocietesDRContactsATCInscrit;Selection "
+                        "Des Societes DR, Contacts ATC Inscrit;REQUETE;SelSocietesFiliales;Selection Des "
+                        "Societes Et Filiales\015\012Utiliser Par:\015\012- FrmFicheSocietes;REQUETE;SelS"
+                        "ocietesPointsUtilsISOExercicesDetailler;Selection Des Societes, Points Et Utilis"
+                        "ations ISO Par Exercices Detailler\015\012Utiliser Par :\015\012- Site Internet;"
+                        "REQUETE;SelSocietesResultatsExercices;Selection Des Societes Et Resultats Par Ex"
+                        "ercices;REQUETE;SelSocietesResultatsExercices2000;Selection Des Societes Et Resu"
+                        "ltats Exercices 2000;REQUETE;SelSocietesResultatsExercices2001;Selection Des Soc"
+                        "ietes Et Resultats Exercices 2001;REQUETE;SelSocietesResultatsExercices2002;Sele"
+                        "ction Des Societes Et Resultats Exercices 2002;REQUETE;SelSocietesResultatsExerc"
+                        "ices2003;Selection Des Societes Et Resultats Exercices 2003;REQUETE;SelSocietesR"
+                        "esultatsSemestres;Selection Des Societes Et Resultats Par Semestres\015\012Utili"
+                        "ser Par :\015\012- SFrmFicheSocietesResultatsChaudieres;REQUETE;SelSocietesSolde"
+                        "s;Selection Des Societes, Soldes Globals\015\012Utiliser Par:\015\012- FrmSaisie"
+                        "CadeauxAchats;REQUETE;SelSocietesSoldesExercices;Selection Des Societes, Soldes "
+                        "Par Exercice\015\012Utiliser Par:\015\012- ModMouvement\015\012- SFrmFicheSociet"
+                        "esResultatsSoldesExercices;REQUETE;SelSocietesSoldesExercicesDetailler;Selection"
+                        " Des Societes, Soldes Par Exercices Detailler\015\012Utiliser Par :\015\012- Sel"
+                        "SocDRConATCSocSTAAdhConTAInsResultatsBonus2003Detailler;REQUETE;SelSocietesSolde"
+                        "sISOExercices;Selection Des Societes, Soldes ISO Par Exercice;REQUETE;SelSociete"
+                        "sSoldesISOExercicesDetailler;Selection Des Societes, Soldes ISO Par Exercices De"
+                        "tailler\015\012Utiliser Par :\015\012- SFrmFicheSocietesResultatsISOExercices;RE"
+                        "QUETE;SelSocietesSTAAdhResultatsBonus2003DetReleves;Selection Des Societes STA A"
+                        "dh, Resultats 2003 Bonus Et ISO A Date Releves\015\012Utiliser Par :\015\012- Se"
+                        "lEtatSocietesSTAAdhConTAInsSoldesReleves\015\012\015\012;REQUETE;SelSocietesSTAA"
+                        "dhResultatsSemestresDetReleves;Selection Des Societes STA Adh, Resultats Des Rem"
+                        "ontees De Chaudieres Par Semestres Detailler A Date Releves\015\012Utiliser Par "
+                        ":\015\012- SelSocietesSTAAdhResultatsBonus2003DetReleves\015\012;REQUETE;SelSoci"
+                        "etesSTAAdhSoldesExercicesDetaillerReleves;Selection Des Societes STA Adh, Soldes"
+                        " Par Exercices Detailler A Date Releves\015\012Utiliser Par :\015\012- SelSociet"
+                        "esSTAAdhResultatsBonus2003DetReleves;REQUETE;SelSocietesSTAContactsTAInsCadeauxA"
+                        "chats;Selection Des Societes STA, Contacts TA Inscrits,Cadeaux Achats, Articles\015"
+                        "\012Utiliser Par :\015\012- FrmRecherche\015\012- FrmLstCadeuxAchats;REQUETE;Sel"
+                        "SocietesSTAContactsTAInsChaudieresRemontees;Selection Des Societes STA, Contacts"
+                        " TA Inscrits,Chaudieres Remontées, Articles\015\012Utiliser Par :\015\012- FrmRe"
+                        "cherche\015\012- FrmLstChaudieresRemontees;REQUETE;SelSocietesSTAVillesContactsT"
+                        "AInscrit;Selection Des Societes STA, Villes,Contacts TA Inscrit;REQUETE;SelSocie"
+                        "tesVilles;Selection Des Societes, Villes\015\012Utiliser Par :\015\012- FrmReche"
+                        "rche\015\012- FrmLstSocietes;REQUETE;SelSocietesVillesContactsInscrit;Selection "
+                        "Des Societes Villes Contacts Inscrits;REQUETE;SelVillesDepartementsCode;Selectio"
+                        "n Des Villes, Code Departements;REQUETE;UniSocietesResultats;Union Des Resultats"
+                        " Des Remontees De Chaudieres Par Semestres 2000-2001-2002-2003-2004\015\012Utili"
+                        "ser Par :\015\012- SelSocietesResultatsSemestres\015\012- AnaSocietesSTAAdhResul"
+                        "tats(Type)Semestres\015\012- SelSocietesResultatsExercices\015\012- SelSocietesR"
+                        "esultatsExercices(Année);REQUETE"
+                    ColumnWidths ="3402;7938;0"
+                    AfterUpdate ="[Event Procedure]"
+                    RowSource ="CDP2002CHAUDIERESREMONTEES;;TABLE;CDP2002RESULTATS;;TABLE;MSysACEs;;TABLE;MSysOb"
+                        "jects;;TABLE;MSysQueries;;TABLE;MSysRelationships;;TABLE;TBLCADEAUXACHATS;Liste "
+                        "Des Achats De Cadeaux;TABLE;TBLCADEAUXARTICLES;Liste Des Articles Cadeaux;TABLE;"
+                        "TBLCHAUDIERESARTICLES;Liste Des Articles Chaudiéres;TABLE;TBLCHAUDIERESREMONTEES"
+                        ";Liste Des Remontées De Chaudiéres;TABLE;TBLCIVILITES;Liste Des Civilités;TABLE;"
+                        "TBLCONTACTS;Liste Des Contacts;TABLE;TBLCONTACTSFONCTIONS;Liste Des Fonctions De"
+                        "s Contacts;TABLE;TBLDEPARTEMENTS;Liste Des Departements;TABLE;TBLEXERCICES;Liste"
+                        " Des Exercices;TABLE;TBLFICHIERS;Liste Des Fichiers;TABLE;TBLMACHINES;Liste Des "
+                        "Machines Connectées;TABLE;TBLMACHINESMESSAGES;Liste Des Messages Des Utilisateur"
+                        ";TABLE;TBLMENU;Liste Du Menu;TABLE;TBLMOUVEMENTS;Liste Des Mouvements;TABLE;TBLM"
+                        "OUVEMENTSNATURES;Liste Des Natures Des Mouvements;TABLE;TBLPARAMETRES;Liste Des "
+                        "Parametres;TABLE;TBLPARAMETRESGENERALS;Liste Des Parametres Generals;TABLE;TBLSE"
+                        "MESTRES;Liste Des Semestres;TABLE;TBLSOCIETES;Liste Des Societes;TABLE;TBLSOCIET"
+                        "ESADHERENTS;Liste Des Societes Adherents;TABLE;TBLSOCIETESRESULTATS;Liste Des Re"
+                        "sultats Des Societes;TABLE;TBLSOCIETESRESULTATS2003;Liste Des Resultats 2003 Des"
+                        " Societes (Bonus Rea/ISO) A Date;TABLE;TBLSOCIETESTYPES;Liste Des Types Des Soci"
+                        "etes;TABLE;TBLVILLES;Liste Des Villes;TABLE;AnaSocietesResultats;Analyse Des Res"
+                        "ultats Des Societes Remontees De Chaudieres Par Semestres\015\012Utiliser Par:\015"
+                        "\012- UniSocietesResultats;REQUETE;AnaSocietesSTAAdhResultatsChdExercices;Analys"
+                        "e Des Resultats Des Societes STA Adh Total Des Remontees De Chaudieres Par Exerc"
+                        "ices\015\012Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultatsExercicesDet"
+                        "ailler;REQUETE;AnaSocietesSTAAdhResultatsChdGammesSemestresRelevesDebut;Analyse "
+                        "Des Resultats Des Societes STA Adh Total Des Remontees De Chaudieres Par Gammes "
+                        "Par Semestres A Date Debut Releves;REQUETE;AnaSocietesSTAAdhResultatsChdGammesSe"
+                        "mestresRelevesFin;Analyse Des Resultats Des Societes STA Adh Total Des Remontees"
+                        " De Chaudieres Par Gammes Par Semestres A Date Releves;REQUETE;AnaSocietesSTAAdh"
+                        "ResultatsChdSemestres;Analyse Des Resultats Des Societes STA Adh Total Des Remon"
+                        "tees De Chaudieres Par Semestres\015\012Utiliser Par :\015\012- SelSocDRConATCSo"
+                        "cSTAAdhResultatsSemestresDetailler;REQUETE;AnaSocietesSTAAdhResultatsISOExercice"
+                        "s;Analyse Des Resultats Des Societes STA Adh Total ISO Des Remontees De Chaudier"
+                        "es Par Exercices\015\012Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultats"
+                        "ExercicesDetailler;REQUETE;AnaSocietesSTAAdhResultatsISOSemestres;Analyse Des Re"
+                        "sultats Des Societes STA Adh Total ISO Des Remontees De Chaudieres Par Semestres"
+                        "\015\012Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultatsSemestresDetaill"
+                        "er;REQUETE;AnaSocietesSTAAdhResultatsISOSPLITSemestres;Analyse Des Resultats Des"
+                        " Societes STA Adh Total ISOSPLIT Des Remontees De Chaudieres Par Semestres\015\012"
+                        "Utiliser Par :\015\012- SelMailingSocDRConATCSocSTAAdhConTAInsResSemestresDetail"
+                        "lerSPLIT;REQUETE;AnaSocietesSTAAdhResultatsTHEMAExercices;Analyse Des Resultats "
+                        "Des Societes STA Adh Total THEMA Des Remontees De Chaudieres Par Semestres\015\012"
+                        "Utiliser Par :\015\012- SelSocDRConATCSocSTAAdhResultatsExercicesDetailler;REQUE"
+                        "TE;AnaSocietesSTAAdhResultatsTHEMASemestres;Analyse Des Resultats Des Societes S"
+                        "TA Adh Total THEMA Des Remontees De Chaudieres Par Semestres\015\012Utiliser Par"
+                        " :\015\012- SelSocDRConATCSocSTAAdhResultatsSemestresDetailler;REQUETE;SelCadeau"
+                        "xArticles;Selection Des Cadeaux, Articles\015\012Utiliser Par:\015\012- FrmFiche"
+                        "Societes;REQUETE;SelChaudieresArticlesSemestres;Selection Des Remontees De Chaud"
+                        "ieres, Articles, Semestres\015\012Utiliser Par:\015\012- FrmFicheSocietes;REQUET"
+                        "E;SelChd716;;REQUETE;SelContactsFonctions;Selection Des Contacts, Fonctions\015\012"
+                        "Utiliser Par :\015\012- FrmFicheSocietes;REQUETE;SelContactsInscrit;Selection De"
+                        "s Contacts Inscrit\015\012Utiliser Par :\015\012- SelEtatSocietesSTAAdhConTAInsS"
+                        "oldesReleves\015\012- SelMailingSocDRConATCSocSTAAdhConTAInsResISOSoldesDetaille"
+                        "r\015\012- SelMailingSocietesSTAContactsTAInsChaudieresRemontees\015\012- SelMai"
+                        "lingSocDRConATCSocSTAAdhConT;REQUETE;SelContactsNonInscrit;Selection Des Contact"
+                        "s Non Inscrits;REQUETE;SelContactsVilles;Selection Des Contacts, Villes\015\012U"
+                        "tiliser Par :\015\012- FrmRecherche\015\012- FrmLstContacts;REQUETE;SelEtatRelev"
+                        "esSocietesSoldesISOExercices;Selection Des Societes, Soldes ISO Par Exercices A "
+                        "Date De Releves\015\012Utiliser Par :\015\012- SEtaSocietesSoldesRelevesISOExerc"
+                        "ices;REQUETE;SelEtatRelevesSocietesSoldesMouvements;Selection Des Societes, Mouv"
+                        "ements Detailler A Date Releves\015\012Utiliser Par\015\012- SEtaSocietesSoldesR"
+                        "elevesMouvements;REQUETE;SelEtatRelevesSocietesSoldesSTAAdhConTAIns;Selection De"
+                        "s Societes STA Adh, Contacts Inscrits, Soldes A Date Releves\015\012Utiliser Par"
+                        ":\015\012- EtaSocietesSTAAdhConTAInsSoldesReleves;REQUETE;SelFichiersDetailler;S"
+                        "election Des Fichiers Detailler;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAIns;L"
+                        "iste Des STA Adherents;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAInsResISOSolde"
+                        "sDetailler;Situation Des STA;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAInsResSe"
+                        "mestresDetailler;Situation Des STA;REQUETE;SelMailingSocDRConATCSocSTAAdhConTAIn"
+                        "sResSemestresDetaillerSPLIT;Situation Des STA;REQUETE;SelMailingSocDRConATCSocST"
+                        "AAdhConTAInsResultatsDetailler;RESULTATS MENSUELS ARMELLE;REQUETE;SelMailingSocD"
+                        "RConATCSocSTAAdhConTAInsResultatsDetSPLIT;RESULTATS MENSUELS ARMELLE (SPLIT);REQ"
+                        "UETE;SelMailingSocietesSTAAdhConTAIns;Liste Des STA Adherents;REQUETE;SelMailing"
+                        "SocietesSTAContactsTAInsCadeauxAchats;Achats Cadeaux;REQUETE;SelMailingSocietesS"
+                        "TAContactsTAInsChaudieresRemontees;Remontées Chaudiéres;REQUETE;SelMouvementsCad"
+                        "eaux;Selection Des Mouvements Cadeaux\015\012Utiliser Par:\015\012- ModGestionMo"
+                        "uvements;REQUETE;SelMouvementsChaudieres;Selection Des Mouvements Chaudieres\015"
+                        "\012Utiliser Par:\015\012- ModGestionMouvements;REQUETE;SelMouvementsNaturesExer"
+                        "cices;Selection Des Mouvements, Natures Et Exercices\015\012Utiliser Par:\015\012"
+                        "- FrmFicheSocietes;REQUETE;SelMouvementsRegularisationCheques;Selection Des Mouv"
+                        "ements Regularisation Et Cheque\015\012Utiliser Par :\015\012- FrmSaisieRegulari"
+                        "sationCheques;REQUETE;SelMouvementsUtilsBonusISO;Selection Des Mouvements Utilis"
+                        "ation Des Bonus ISO\015\012Utiliser Par :\015\012- FrmSaisieBonusAnimation;REQUE"
+                        "TE;SelParametresDetailler;Selection Des Parametres Detailler;REQUETE;SelParametr"
+                        "esGeneralsDetailler;Selection Des Parametres Generals Detailler;REQUETE;SelSocDR"
+                        "ConATCAdhResultatsExercicesDetailler;Selection Des Societes DR, Contacts ATC, Re"
+                        "sultats Des Remontees De Chaudieres Des Societes Adh Par Exercices Detailler\015"
+                        "\012Utiliser Par :\015\012- Site Web;REQUETE;SelSocDRConATCAdhResultatsSemestres"
+                        "Detailler;Selection Des Societes DR, Contacts ATC, Resultats Des Remontees De Ch"
+                        "audieres Des Societes Adh Par Semestres Detailler;REQUETE;SelSocDRConATCSocSTAAd"
+                        "hConTAInsResultatsBonus2003Detailler;Selection Des Societes DR, Contacts ATC, So"
+                        "cietes STA Adh, Contacts TA Inscrits, Resultats 2003 Bonus Et ISO\015\012Utilise"
+                        "r Par :\015\012- SFrmFicheSocietesResultatsSoldesExercices\015\012- FrmSaisieReg"
+                        "ularisationCheques\015\012- FrmSaisieCadeauxAchats;REQUETE;SelSocDRConATCSocSTAA"
+                        "dhConTAInsResultatsExercicesDetailler;Selection Des Societes DR, Contacts ATC, S"
+                        "ocietes STA Adh, Contacts TA Inscrits, Resultats Des Remontees De Chaudieres Par"
+                        " Exercices Detailler\015\012Utiliser Par:\015\012- SelSocDRConATCAdhResultatsExe"
+                        "rcicesDetailler\015\012- Site Web;REQUETE;SelSocDRConATCSocSTAAdhConTAInsResulta"
+                        "tsSemestresDetailler;Selection Des Societes DR, Contacts ATC, Societes STA Adh, "
+                        "Contacts TA Inscrits, Resultats Des Remontees De Chaudieres Par Semestres Detail"
+                        "ler\015\012Utiliser Par:\015\012- SelSocDRConATCAdhResultatsSemestresDetailler;R"
+                        "EQUETE;SelSocDRConATCSocSTAAdhConTAInsSoldesExercicesDetailler;Selection Des Soc"
+                        "ietes DR, Contacts ATC, Societes STA Adh, Contacts TA Inscrits, Soldes Par Exerc"
+                        "ices Detailler\015\012Utiliser Par:\015\012- SelSocDRConATCSocATCAdhConTAInsResu"
+                        "ltatsBonus2003Detailler;REQUETE;SelSocietesAdherentsExercices;Selection Des Adhe"
+                        "sions Des Societes Par Exercices;REQUETE;SelSocietesDRContactsATC;Selection Des "
+                        "Societes DR, Contacts ATC\015\012Utiliser Par :\015\012- SelMailingSocDRConATCSo"
+                        "cSTAAdhConTAInsResISOSoldesDetailler\015\012- SelMailingSocDRConATCSocSTAAdhConT"
+                        "AInsResSemestresDetailler\015\012- SelMailingSocDRConATCSocSTAAdhConTAInsResulta"
+                        "ts20022003Detailler\015\012- ;REQUETE;SelSocietesDRContactsATCInscrit;Selection "
+                        "Des Societes DR, Contacts ATC Inscrit;REQUETE;SelSocietesFiliales;Selection Des "
+                        "Societes Et Filiales\015\012Utiliser Par:\015\012- FrmFicheSocietes;REQUETE;SelS"
+                        "ocietesPointsUtilsISOExercicesDetailler;Selection Des Societes, Points Et Utilis"
+                        "ations ISO Par Exercices Detailler\015\012Utiliser Par :\015\012- Site Internet;"
+                        "REQUETE;SelSocietesResultatsExercices;Selection Des Societes Et Resultats Par Ex"
+                        "ercices;REQUETE;SelSocietesResultatsExercices2000;Selection Des Societes Et Resu"
+                        "ltats Exercices 2000;REQUETE;SelSocietesResultatsExercices2001;Selection Des Soc"
+                        "ietes Et Resultats Exercices 2001;REQUETE;SelSocietesResultatsExercices2002;Sele"
+                        "ction Des Societes Et Resultats Exercices 2002;REQUETE;SelSocietesResultatsExerc"
+                        "ices2003;Selection Des Societes Et Resultats Exercices 2003;REQUETE;SelSocietesR"
+                        "esultatsSemestres;Selection Des Societes Et Resultats Par Semestres\015\012Utili"
+                        "ser Par :\015\012- SFrmFicheSocietesResultatsChaudieres;REQUETE;SelSocietesSolde"
+                        "s;Selection Des Societes, Soldes Globals\015\012Utiliser Par:\015\012- FrmSaisie"
+                        "CadeauxAchats;REQUETE;SelSocietesSoldesExercices;Selection Des Societes, Soldes "
+                        "Par Exercice\015\012Utiliser Par:\015\012- ModMouvement\015\012- SFrmFicheSociet"
+                        "esResultatsSoldesExercices;REQUETE;SelSocietesSoldesExercicesDetailler;Selection"
+                        " Des Societes, Soldes Par Exercices Detailler\015\012Utiliser Par :\015\012- Sel"
+                        "SocDRConATCSocSTAAdhConTAInsResultatsBonus2003Detailler;REQUETE;SelSocietesSolde"
+                        "sISOExercices;Selection Des Societes, Soldes ISO Par Exercice;REQUETE;SelSociete"
+                        "sSoldesISOExercicesDetailler;Selection Des Societes, Soldes ISO Par Exercices De"
+                        "tailler\015\012Utiliser Par :\015\012- SFrmFicheSocietesResultatsISOExercices;RE"
+                        "QUETE;SelSocietesSTAAdhResultatsBonus2003DetReleves;Selection Des Societes STA A"
+                        "dh, Resultats 2003 Bonus Et ISO A Date Releves\015\012Utiliser Par :\015\012- Se"
+                        "lEtatSocietesSTAAdhConTAInsSoldesReleves\015\012\015\012;REQUETE;SelSocietesSTAA"
+                        "dhResultatsSemestresDetReleves;Selection Des Societes STA Adh, Resultats Des Rem"
+                        "ontees De Chaudieres Par Semestres Detailler A Date Releves\015\012Utiliser Par "
+                        ":\015\012- SelSocietesSTAAdhResultatsBonus2003DetReleves\015\012;REQUETE;SelSoci"
+                        "etesSTAAdhSoldesExercicesDetaillerReleves;Selection Des Societes STA Adh, Soldes"
+                        " Par Exercices Detailler A Date Releves\015\012Utiliser Par :\015\012- SelSociet"
+                        "esSTAAdhResultatsBonus2003DetReleves;REQUETE;SelSocietesSTAContactsTAInsCadeauxA"
+                        "chats;Selection Des Societes STA, Contacts TA Inscrits,Cadeaux Achats, Articles\015"
+                        "\012Utiliser Par :\015\012- FrmRecherche\015\012- FrmLstCadeuxAchats;REQUETE;Sel"
+                        "SocietesSTAContactsTAInsChaudieresRemontees;Selection Des Societes STA, Contacts"
+                        " TA Inscrits,Chaudieres Remontées, Articles\015\012Utiliser Par :\015\012- FrmRe"
+                        "cherche\015\012- FrmLstChaudieresRemontees;REQUETE;SelSocietesSTAVillesContactsT"
+                        "AInscrit;Selection Des Societes STA, Villes,Contacts TA Inscrit;REQUETE;SelSocie"
+                        "tesVilles;Selection Des Societes, Villes\015\012Utiliser Par :\015\012- FrmReche"
+                        "rche\015\012- FrmLstSocietes;REQUETE;SelSocietesVillesContactsInscrit;Selection "
+                        "Des Societes Villes Contacts Inscrits;REQUETE;SelVillesDepartementsCode;Selectio"
+                        "n Des Villes, Code Departements;REQUETE;UniSocietesResultats;Union Des Resultats"
+                        " Des Remontees De Chaudieres Par Semestres 2000-2001-2002-2003-2004\015\012Utili"
+                        "ser Par :\015\012- SelSocietesResultatsSemestres\015\012- AnaSocietesSTAAdhResul"
+                        "tats(Type)Semestres\015\012- SelSocietesResultatsExercices\015\012- SelSocietesR"
+                        "esultatsExercices(Année);REQUETE"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =555
+                            Top =150
+                            Width =4500
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtCmbTableRequete"
+                            Caption ="Liste Des Tables Et Requétes"
+                        End
+                    End
+                End
+                Begin ListBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =87
+                    ColumnCount =3
+                    Left =570
+                    Top =1080
+                    Width =9600
+                    Height =2040
+                    TabIndex =1
+                    BoundColumn =-1
+                    Name ="LstChamp"
+                    RowSourceType ="Value List"
+                    ColumnWidths ="1701;2268;0"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =570
+                            Top =840
+                            Width =9600
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiLstChamp"
+                            Caption ="Liste Des Champs"
+                        End
+                    End
+                End
+                Begin ListBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =87
+                    ColumnCount =6
+                    Left =555
+                    Top =3540
+                    Width =9630
+                    Height =1920
+                    TabIndex =2
+                    BoundColumn =-1
+                    Name ="LstChampSelectionner"
+                    RowSourceType ="Value List"
+                    RowSource ="SocSTA;Société Code STA;10;;;;SocRaison;Société Raison Sociale;10;;;;SocAdresse;"
+                        "Société Adresse;10;;;;SocVilCodePostal;Ville Code Postal;10;;;;SocVilNom;Ville N"
+                        "om;10;;;;SocTel1;Société Telephone 1;10;;;;SocTel1Lib;Société Telephone Libelle "
+                        "1;10;;;;SocTel2;Société Telephone 2;10;;;;SocTel2Lib;Société Telephone Libelle 2"
+                        ";10;;;;SocFax;Société Fax;10;;;;SocEMail;Société Adresse E-Mail;12;;;;SocWeb;Soc"
+                        "iété Site Web;12;;;;SocNotes;Société Notes;12;;;"
+                    ColumnWidths ="1701;2268;0;1134;1134;1134"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =555
+                            Top =3300
+                            Width =9630
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiLstChampSelectionner"
+                            Caption ="Liste Des Champs Selectionnée"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =5070
+                    Top =405
+                    Width =5100
+                    Height =270
+                    TabIndex =3
+                    Name ="TxtTableRequete"
+                    ControlSource ="=CmbTableRequete.Column(1)"
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =585
+                    Top =5925
+                    Width =2106
+                    Height =270
+                    TabIndex =4
+                    Name ="TxtChampSelectionner"
+                    ControlSource ="=LstChampSelectionner.Column(0)"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =585
+                            Top =5670
+                            Width =2100
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiChampSelectionner"
+                            Caption ="Champ Selectionnée"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    ListWidth =2268
+                    Left =2700
+                    Top =5925
+                    Width =870
+                    Height =270
+                    TabIndex =5
+                    Name ="CmbChampCondition1"
+                    RowSourceType ="Value List"
+                    RowSource ="\"\";\"<\";\"<=\";\"=\";\">=\";\">\";\"<>\";\"Comme\";\"Pas_Comme\""
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =95
+                            Left =2685
+                            Top =5670
+                            Width =870
+                            Height =245
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiCmbChampCondition1"
+                            Caption ="Condition 1"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =255
+                    IMESentenceMode =3
+                    Left =3555
+                    Top =5925
+                    Width =2286
+                    Height =270
+                    TabIndex =6
+                    Name ="CmbChampValeurCondition1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCT SocSTA FROM SelSocietesVilles ORDER BY SocSTA; "
+                    BeforeUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =95
+                            Left =3555
+                            Top =5670
+                            Width =2265
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiCmbChampValeurCondition1"
+                            Caption ="Valeur"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =127
+                    IMESentenceMode =3
+                    ListWidth =2268
+                    Left =5835
+                    Top =5925
+                    Width =870
+                    Height =255
+                    TabIndex =7
+                    Name ="CmbChampCondition2"
+                    RowSourceType ="Value List"
+                    RowSource ="\"\";\"<\";\"<=\";\"=\";\">=\";\">\";\"<>\";\"Comme\";\"Pas_Comme\""
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =127
+                            Left =5820
+                            Top =5670
+                            Width =870
+                            Height =245
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiCmbChampCondition2"
+                            Caption ="Condition 2"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =255
+                    IMESentenceMode =3
+                    Left =6690
+                    Top =5925
+                    Width =2271
+                    TabIndex =8
+                    Name ="CmbChampValeurCondition2"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCT SocSTA FROM SelSocietesVilles ORDER BY SocSTA; "
+                    BeforeUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =127
+                            Left =6690
+                            Top =5670
+                            Width =2235
+                            Height =240
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiCmbChampValeurCondition2"
+                            Caption ="Valeur"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    ListWidth =2268
+                    Left =8940
+                    Top =5925
+                    Width =1230
+                    TabIndex =9
+                    Name ="CmbChampOrdre"
+                    RowSourceType ="Value List"
+                    RowSource ="\"\";\"Croisant\";\"Decroisant\""
+                    Begin
+                        Begin Label
+                            OverlapFlags =127
+                            Left =8925
+                            Top =5670
+                            Width =1215
+                            Height =245
+                            FontWeight =700
+                            BackColor =12632256
+                            Name ="EtiCmbChampOrdre"
+                            Caption ="Ordre"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =705
+            BackColor =12632256
+            Name ="PiedFormulaire"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =75
+                    Top =60
+                    Width =576
+                    Height =576
+                    Name ="CmdExporteExcel"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff002727272727272727727272727272727227ffffffffffff27 ,
+                        0x72fffffff727277227f2727272f2722772f727272f272f7227f27272f2727f27 ,
+                        0x72ff272f27272f7227fff2f2727fff2772ff2f272727ff7227f2f27272727f27 ,
+                        0x72f72727f7272f7227f2727fff727f2772ffffffffffff722727272727272727 ,
+                        0x7272727272727272000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Exécuter Excel"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =2
+                    Left =10095
+                    Top =45
+                    Width =591
+                    Height =591
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =0
+                    Name ="CmdValider"
+                    Caption ="Valider Les Modifications En Cours"
+                    StatusBarText ="Valider Les Modifications En Cours"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000020000000200000000100080000000000000400000000000000000000 ,
+                        0x0000000000000000000000000000bf0000bf000000bfbf00bf000000bf00bf00 ,
+                        0xbfbf0000c0c0c000c0dcc000f0c8a40000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xf0fbff00a4a0a000808080000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070700070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070000070707070707070707 ,
+                        0x0707070707070707070707070707070707070707000000000707070707070707 ,
+                        0x0707070707070707070707070707070707070700000000000707070707070707 ,
+                        0x0707070707070707070707070707070707070000000000000707070707070707 ,
+                        0x0707070707070707070707070707070707000000000000000007070707070707 ,
+                        0x0707070707070707070707070707070700000000070700000007070707070707 ,
+                        0x0707070707070707070707070707070000000007070700000000070707070707 ,
+                        0x0707070707070707070707070707000000000707070707000000070707070707 ,
+                        0x0707070707070707070707070700000000070707070707000000000707070707 ,
+                        0x0707070707070707070707070700000007070707070707070000000707070707 ,
+                        0x0707070707070707070707070707070707070707070707070700000007070707 ,
+                        0x0707070707070707070707070707070707070707070707070700000007070707 ,
+                        0x0707070707070707070707070707070707070707070707070707000000070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070000000707 ,
+                        0x0707070707070707070707070707070707070707070707070707070700000707 ,
+                        0x0707070707070707070707070707070707070707070707070707070700000007 ,
+                        0x0707070707070707070707070707070707070707070707070707070707000007 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070000 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070700 ,
+                        0x0007070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0007070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0700070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707000707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070007070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070700070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707000707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707
+                    End
+                    FontName ="System"
+                    ObjectPalette = Begin
+                        0x0003000100000000bf00000000bf0000bfbf00000000bf00bf00bf0000bfbf00 ,
+                        0xc0c0c000c0dcc000a4c8f0000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000fffbf000 ,
+                        0xa0a0a40080808000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Valider Les Modifications En Cours"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FrmMailingMulti.cls"

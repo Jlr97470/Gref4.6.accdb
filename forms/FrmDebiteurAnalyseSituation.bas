@@ -1,0 +1,404 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =9795
+    ItemSuffix =57
+    Left =2535
+    Top =285
+    Right =12705
+    Bottom =8190
+    RecSrcDt = Begin
+        0xd763fa7eb1ede240
+    End
+    Caption ="Analyse"
+    OnOpen ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =1417
+            LabelX =-236
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =750
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =73
+                    TextFontFamily =34
+                    Left =1260
+                    Top =120
+                    Width =472
+                    Height =472
+                    FontSize =8
+                    TabIndex =1
+                    Name ="CmdImprimer"
+                    Caption ="&i"
+                    StatusBarText ="Imprimer le rapport"
+                    OnClick ="=ImpVisu(0)"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x1000000010000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888000000000008888088888888808088 ,
+                        0x00000000000008080888888bbb88000808888887778808080000000000000880 ,
+                        0x08888888888080808000000000080800880ffffffff080808880f00000f00008 ,
+                        0x8880ffffffff088888880f00000f088888880ffffffff0888888800000000088 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x00000000
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =471
+                    Height =471
+                    Name ="CmdFermer"
+                    Caption ="FermerSimple"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =2580
+                    Top =195
+                    Width =5295
+                    Height =405
+                    FontSize =14
+                    ForeColor =8355711
+                    Name ="EtiAnalyseSituationDebiteurTitreOmbre"
+                    Caption ="Analyse de la Situation des Débiteurs"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =2550
+                    Top =150
+                    Width =5295
+                    Height =405
+                    FontSize =14
+                    ForeColor =16777215
+                    Name ="EtiAnalyseSituationDebiteurTitre"
+                    Caption ="Analyse de la Situation des Débiteurs"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =690
+                    Top =120
+                    Width =453
+                    Height =465
+                    FontSize =8
+                    TabIndex =2
+                    Name ="CmdVisualiser"
+                    OnClick ="=ImpVisu(2)"
+                    PictureData = Begin
+                        0x28000000100000000f0000000100040000000000780000000000000000000000 ,
+                        0x1000000010000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff0000000000000088000ffffffffff080000fffffff00007008 ,
+                        0x0ffffff0788707880fffff0788e770880fffff08888780880fffff08e8878088 ,
+                        0x0fffff07ee8770880ffffff0788708880fffffff000088880ffffffffff08888 ,
+                        0x0fffffff000088880fffffff080888880fffffff008888880000000008888888
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =73
+                    TextFontFamily =34
+                    Left =1815
+                    Top =120
+                    Width =486
+                    Height =456
+                    FontSize =8
+                    TabIndex =3
+                    Name ="CmdExporter"
+                    Caption ="&i"
+                    StatusBarText ="Imprimer le rapport"
+                    OnClick ="=ImpVisu(5)"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaad000000000000add0330880000330da ,
+                        0xa0330880000330add0330880000330daa0330000000330add0333333333330da ,
+                        0xa0330000000330add030fffffff030daa030fffcfff030add030ffcccff030da ,
+                        0xa030fffcccfdadadd030ffffcccacadaa000000daccccdaddadadadadacccada ,
+                        0xadadadadaccccdad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =5310
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin Subform
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    SpecialEffect =2
+                    Left =2670
+                    Top =435
+                    Width =4590
+                    Height =2550
+                    Name ="SFrmDebiteurAnalyseSituation"
+                    SourceObject ="Form.SFrmDebiteurAnalyseSituation"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =6810
+                    Top =135
+                    Width =2805
+                    Height =240
+                    TabIndex =3
+                    BackColor =12632256
+                    Name ="TxtDate"
+                    ControlSource ="=Date()"
+                    Format ="Long Date"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =0
+                            Left =5100
+                            Top =135
+                            Width =1710
+                            Height =240
+                            Name ="EtiDate"
+                            Caption ="Aujourd'hui :"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1524
+                    Top =435
+                    Width =978
+                    TabIndex =1
+                    Name ="TxtDateDebut"
+                    Format ="Short Date"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1524
+                    Top =765
+                    Width =993
+                    TabIndex =2
+                    Name ="TxtDateFin"
+                    Format ="Short Date"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =1005
+                            Top =765
+                            Width =480
+                            Height =240
+                            Name ="EtiDateFin"
+                            Caption ="au  :"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =240
+                    Top =435
+                    Width =1245
+                    Height =240
+                    Name ="EtiDateDebut"
+                    Caption ="Période  du  :"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =6120
+                    Top =4980
+                    Width =1146
+                    FontWeight =700
+                    TabIndex =4
+                    BackColor =12632256
+                    Name ="TxtNbDebiteurEcheance"
+                    ControlSource ="=DCount(\"De_Ope_Code\",\"DEBITEUR_ECHEANCE\",\"De_Date_éch<=Date()\")"
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =93
+                            TextAlign =0
+                            Left =2685
+                            Top =4980
+                            Width =3435
+                            Height =255
+                            Name ="EtiNbDebiteurEcheance"
+                            Caption ="Nb Echeance CB :"
+                        End
+                    End
+                End
+                Begin Subform
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    SpecialEffect =2
+                    Left =2670
+                    Top =3105
+                    Width =4590
+                    Height =1845
+                    TabIndex =5
+                    Name ="SFrmDebiteurAnalyseSituation1"
+                    SourceObject ="Form.SFrmDebiteurAnalyseSituation1"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =690
+            BackColor =12632256
+            Name ="PiedFormulaire"
+            Begin
+                Begin CommandButton
+                    Default = NotDefault
+                    OverlapFlags =85
+                    AccessKey =65
+                    TextFontFamily =34
+                    Left =4140
+                    Top =120
+                    Width =1575
+                    Height =450
+                    FontWeight =300
+                    Name ="CmdAnalyse"
+                    Caption ="&Analyse"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FrmDebiteurAnalyseSituation.cls"
