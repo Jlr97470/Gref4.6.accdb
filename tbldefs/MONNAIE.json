@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "MONNAIE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Mon_Id]"
+    "PrimaryKey": "[Mon_Id]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Monnaies"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Monnaies"
+      }
+    }
   }
 }

@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "TAUX_GRILLE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[TxG_Grille]"
+    "PrimaryKey": "[TxG_Grille]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Libellés Grille De Taux"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Libellés Grille De Taux"
+      }
+    }
   }
 }

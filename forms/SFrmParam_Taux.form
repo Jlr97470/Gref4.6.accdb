@@ -1,0 +1,99 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    ScrollBars =0
+    RecordLocks =2
+    BorderStyle =0
+    GridX =5
+    GridY =5
+    Width =5310
+    ItemSuffix =41
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xebd5013576e8e240
+    End
+    RecordSource ="SELECT DISTINCTROW TAUX.* FROM TAUX ORDER BY TAUX.Tx_N°; "
+    Caption ="Les Taux de Relance"
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =1417
+            LabelX =-236
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin FormHeader
+            Height =232
+            BackColor =12632256
+            Name ="EntêteFormulaire1"
+        End
+        Begin Section
+            Height =300
+            BackColor =12632256
+            Name ="Détail0"
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="PiedFormulaire2"
+        End
+    End
+End
+CodeBehindForm
+' See "SFrmParam_Taux.cls"

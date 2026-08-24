@@ -110,12 +110,12 @@ WHERE
     (
       (
         TMP_REPRESENTANT_CLIENT.TRCRep_Code
-      )= 'AP'
+      ) = 'AP'
     )
     And (
       (
         TMP_REPRESENTANT_CLIENT.TRC_Flag
-      )= True
+      ) = True
     )
   )
 GROUP BY

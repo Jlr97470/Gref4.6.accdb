@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "FACTURE_DETAIL",
     "Attributes": 1073741824,
-    "PrimaryKey": "[FacD_Fac_Id], [FacD_Déb_Code], [FacD_ETy_Mode]"
+    "PrimaryKey": "[FacD_Fac_Id], [FacD_Déb_Code], [FacD_ETy_Mode]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Details Des Factures"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Details Des Factures"
+      }
+    }
   }
 }

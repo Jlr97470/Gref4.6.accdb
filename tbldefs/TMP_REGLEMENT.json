@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "TMP_REGLEMENT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[TReg_Enc_ID]"
+    "PrimaryKey": "[TReg_Enc_ID]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection D'Encaissements A Reglé Temporaire"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection D'Encaissements A Reglé Temporaire"
+      }
+    }
   }
 }

@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:ARCHDEB.accdb",
     "SourceTableName": "ARCHIVE_DEBITEUR",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Déb_Code]"
+    "PrimaryKey": "[Déb_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Archive Des Debiteurs"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Archive Des Debiteurs"
+      }
+    }
   }
 }

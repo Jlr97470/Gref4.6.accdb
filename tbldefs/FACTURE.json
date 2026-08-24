@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "FACTURE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Fac_Num]"
+    "PrimaryKey": "[Fac_Num]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Factures"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Factures"
+      }
+    }
   }
 }

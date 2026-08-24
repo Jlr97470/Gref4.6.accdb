@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:ARCHDEB.accdb",
     "SourceTableName": "ARCHIVE_ENCAISSEMENT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Enc_ID]"
+    "PrimaryKey": "[Enc_ID]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Archive Des Encaissements"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Archive Des Encaissements"
+      }
+    }
   }
 }

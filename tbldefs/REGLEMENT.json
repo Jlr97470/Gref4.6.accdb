@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "REGLEMENT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Reg_Date], [Reg_Cli_Code]"
+    "PrimaryKey": "[Reg_Date], [Reg_Cli_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Reglements"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Reglements"
+      }
+    }
   }
 }

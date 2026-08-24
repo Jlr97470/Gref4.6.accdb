@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "TMP_FACTURE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[TFac_Enc_ID]"
+    "PrimaryKey": "[TFac_Enc_ID]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection D'Encaissements A Facturé Temporaire"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection D'Encaissements A Facturé Temporaire"
+      }
+    }
   }
 }

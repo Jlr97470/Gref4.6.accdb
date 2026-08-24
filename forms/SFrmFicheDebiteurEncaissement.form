@@ -1,0 +1,296 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    Modal = NotDefault
+    ShortcutMenu = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    BorderStyle =0
+    GridX =5
+    GridY =5
+    Width =5805
+    ItemSuffix =76
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    Filter ="Enc_Montant_mo=2"
+    RecSrcDt = Begin
+        0x0673a60c4ee6e240
+    End
+    RecordSource ="SELECT ENCAISSEMENT.* FROM ENCAISSEMENT; "
+    Caption ="Les Encaissements"
+    OnDelete ="[Event Procedure]"
+    BeforeUpdate ="[Event Procedure]"
+    AfterUpdate ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-236
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =1417
+            LabelX =-236
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Width =1701
+            Height =255
+            LabelX =-236
+        End
+        Begin FormHeader
+            Height =225
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =0
+                    Top =45
+                    Width =870
+                    Height =180
+                    FontSize =7
+                    Name ="EtiEnc_Date"
+                    Caption ="Date:"
+                    FontName ="Small Fonts"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =0
+                    Left =2130
+                    Top =45
+                    Width =1005
+                    Height =180
+                    FontSize =7
+                    Name ="EtiEnc_Montant_m"
+                    Caption ="Montant:"
+                    FontName ="Small Fonts"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =3292
+                    Top =45
+                    Width =960
+                    Height =180
+                    FontSize =7
+                    FontWeight =400
+                    Name ="EtiEnc_Prin_m"
+                    Caption ="Prin"
+                    FontName ="Small Fonts"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =4402
+                    Top =45
+                    Width =945
+                    Height =180
+                    FontSize =7
+                    FontWeight =400
+                    Name ="EtiEnc_Frais_m"
+                    Caption ="Frais"
+                    FontName ="Small Fonts"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =0
+                    Left =1080
+                    Top =45
+                    Width =990
+                    Height =180
+                    FontSize =7
+                    Name ="EtiEnc_Type"
+                    Caption ="Type:"
+                    FontName ="Small Fonts"
+                End
+            End
+        End
+        Begin Section
+            Height =255
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =0
+                    Left =3157
+                    Top =45
+                    Width =150
+                    Height =210
+                    FontSize =7
+                    FontWeight =400
+                    Name ="Eti="
+                    Caption ="="
+                    FontName ="Small Fonts"
+                    EventProcPrefix ="Eti_"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =0
+                    Left =4252
+                    Top =45
+                    Width =150
+                    Height =210
+                    FontSize =7
+                    FontWeight =400
+                    Name ="Eti +"
+                    Caption ="+"
+                    FontName ="Small Fonts"
+                    EventProcPrefix ="Eti__"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextAlign =3
+                    Left =3292
+                    Top =30
+                    Width =951
+                    Height =225
+                    TabIndex =3
+                    Name ="TxtEnc_Prin_m"
+                    ControlSource ="Enc_Prin_m2"
+                    Format ="Standard"
+                    BeforeUpdate ="[Event Procedure]"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =87
+                    TextAlign =3
+                    Left =4402
+                    Top =30
+                    Width =951
+                    Height =225
+                    TabIndex =4
+                    BackColor =8388608
+                    ForeColor =16777215
+                    Name ="TxtEnc_Frais_m"
+                    ControlSource ="Enc_Frais_m2"
+                    Format ="Standard"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    TextAlign =3
+                    Left =2145
+                    Top =30
+                    Width =1011
+                    Height =225
+                    TabIndex =2
+                    Name ="TxtEnc_Montant_m"
+                    ControlSource ="Enc_Montant_m2"
+                    Format ="Standard"
+                    BeforeUpdate ="[Event Procedure]"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =15
+                    Top =30
+                    Width =1026
+                    Height =225
+                    Name ="TxtEnc_Date"
+                    ControlSource ="Enc_Date"
+                    Format ="dd/mm/yyyy"
+                    BeforeUpdate ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =5460
+                    Top =30
+                    Width =260
+                    Height =215
+                    TabIndex =5
+                    Name ="CmdEncaissementDetail"
+                    Caption ="..."
+                    StatusBarText ="Voir le détail de l'opportunité"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x280000000a000000040000000100010000000000100000000000000000000000 ,
+                        0x020000000000000000000000ffffff00ffc000009240000092400000ffc00000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003020000000000ffffff0000000000
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    AllowAutoCorrect = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    ColumnCount =2
+                    ListWidth =3572
+                    Left =1095
+                    Top =30
+                    Width =981
+                    Height =225
+                    TabIndex =1
+                    Name ="CmbEnc_Type"
+                    ControlSource ="Enc_Type"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT ENCAISSEMENT_TYPE.* FROM ENCAISSEMENT_TYPE; "
+                    ColumnWidths ="737;2835"
+                    BeforeUpdate ="[Event Procedure]"
+                    AfterUpdate ="[Event Procedure]"
+                    Format ="Standard"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="PiedFormulaire"
+        End
+    End
+End
+CodeBehindForm
+' See "SFrmFicheDebiteurEncaissement.cls"

@@ -8,6 +8,32 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "ENCAISSEMENT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Enc_ID]"
+    "PrimaryKey": "[Enc_ID]",
+    "FieldProperties": {
+      "Enc_Code_Débiteur": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 1905
+        }
+      },
+      "Enc_Date": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 1140
+        }
+      }
+    },
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Encaissements"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Encaissements"
+      }
+    }
   }
 }

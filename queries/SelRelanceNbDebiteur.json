@@ -1,0 +1,95 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "SelRelanceNbDebiteur"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Relances Nb Debiteurs"
+      }
+    },
+    "Columns": {
+      "CG_New_Code_Action": {
+        "ColumnWidth": 2160,
+        "AggregateType": -1
+      },
+      "Déb_New_Niv_Relance": {
+        "ColumnWidth": 2070,
+        "AggregateType": -1
+      },
+      "DEBITEUR.Déb_Date_proch_rel": {
+        "ColumnWidth": 1935,
+        "AggregateType": -1
+      },
+      "NbDebiteur": {
+        "ColumnWidth": 1995,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 7,
+        "top": 30,
+        "right": 1003,
+        "bottom": 350
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 985,
+        "bottom": 144
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "CODE_GESTION",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 134,
+          "Bottom": 120,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "CLIENT",
+          "Alias": "",
+          "Left": 172,
+          "Top": 6,
+          "Right": 289,
+          "Bottom": 120,
+          "ScrollTop": 15
+        },
+        {
+          "Name": "DEBITEUR",
+          "Alias": "",
+          "Left": 306,
+          "Top": 6,
+          "Right": 402,
+          "Bottom": 120,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ADRESSE_DEBITEUR",
+          "Alias": "",
+          "Left": 440,
+          "Top": 6,
+          "Right": 560,
+          "Bottom": 120,
+          "ScrollTop": 11
+        }
+      ]
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Relances Nb Debiteurs"
+      }
+    }
+  }
+}

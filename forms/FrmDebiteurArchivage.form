@@ -1,0 +1,372 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    AllowEditing = NotDefault
+    RecordSelectors = NotDefault
+    ShortcutMenu = NotDefault
+    AutoCenter = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    BorderStyle =1
+    GridX =5
+    GridY =5
+    Width =6240
+    ItemSuffix =56
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    RecSrcDt = Begin
+        0xdc72e08096ebe240
+    End
+    RecordSource ="SELECT DEBITEUR.* FROM DEBITEUR; "
+    Caption ="Liste des Débiteurs à archiver"
+    OnOpen ="[Event Procedure]"
+    AllowDatasheetView =0
+    Begin
+        Begin Label
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            TextFontFamily =2
+            Width =1701
+            Height =283
+        End
+        Begin OptionButton
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =187
+            Height =187
+        End
+        Begin CheckBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =187
+            Height =187
+        End
+        Begin OptionGroup
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =1701
+            Height =255
+            LabelX =-1701
+        End
+        Begin ListBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+        End
+        Begin ComboBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            Width =1701
+            Height =255
+            LabelX =-1701
+        End
+        Begin FormHeader
+            Height =1080
+            BackColor =12632256
+            Name ="EntêteFormulaire"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    Left =3960
+                    Top =420
+                    Width =1830
+                    Height =210
+                    Name ="EtiDesarchiver"
+                    Caption ="Mode Désarchivage"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =3960
+                    Top =180
+                    Width =1830
+                    Height =210
+                    Name ="Texte50"
+                    Caption ="Mode Archivage"
+                End
+                Begin CommandButton
+                    Cancel = NotDefault
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    Left =105
+                    Top =120
+                    Width =471
+                    Height =471
+                    Name ="CmdFermer"
+                    Caption ="Fermer"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888880888888 ,
+                        0x8888888888888888888888880088888888888888888888888888888030888888 ,
+                        0x8888888888888888888888033088888888888888888888888888803330888888 ,
+                        0x8888888888888888888803333088888888888888888888888000333330000000 ,
+                        0x00000888888888888880333330ffff0888888888888888888880333330ffff08 ,
+                        0x88888888888888888880333300ffff0888888888888888888880333330ffff08 ,
+                        0x88888488888888888880333330ffff0888884488888888888880333330ffff08 ,
+                        0x88844488888888888880333330ffff0888444444488888888880333330ffff08 ,
+                        0x84444444488888888880333330ffff0884444444488888888880333330ffff08 ,
+                        0x8844444448888888888033330fffff08888444888888800088803330ffffff08 ,
+                        0x88884488888880ff8880330fffffff0888888488888880ff888030ffffffff08 ,
+                        0x888888888888800088800fffffffff0888888888888888888880000000000008 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin CommandButton
+                    DisplayWhen =2
+                    OverlapFlags =85
+                    AccessKey =82
+                    Left =690
+                    Top =120
+                    Width =441
+                    Height =456
+                    TabIndex =1
+                    Name ="CmdRechercher"
+                    Caption ="&Rechercher"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888888888888 ,
+                        0x8888888888888888800000000888888800000000888888888000000008888888 ,
+                        0x0000000088888888800ff0000888888800ff000088888888800ff00008888888 ,
+                        0x00ff000088888888800ff0000888888800ff0000888888888000000000008000 ,
+                        0x0000000088888888800000000000800000000000888888888000ff000000000f ,
+                        0xf0000000888888888000ff000088000ff0000000888888888000ff000088000f ,
+                        0xf0000000888888888800ff000088000ff0000008888888888880000000000000 ,
+                        0x000000888888888788800000000000000000008888888874888800f00000800f ,
+                        0x0000088888888847888800000000800000000888888888488888000000008000 ,
+                        0x0000088888888848888888000088888000088888888888478888880ff0888880 ,
+                        0xff088888888888748888880ff0888880ff088888888888878888880000888880 ,
+                        0x0008888888888888888888888888888888888888888888888888888888888888 ,
+                        0x8888888888888888000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =4845
+                    Top =840
+                    Width =1110
+                    Height =240
+                    Name ="Texte43"
+                    Caption ="Situation"
+                End
+                Begin Label
+                    Visible = NotDefault
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =2070
+                    Top =195
+                    Width =720
+                    Height =255
+                    Name ="EtiRien"
+                    Caption ="Rien"
+                    OnClick ="=ToutRien(False)"
+                End
+                Begin Label
+                    Visible = NotDefault
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =1320
+                    Top =195
+                    Width =720
+                    Height =255
+                    Name ="EtiTout"
+                    Caption ="Tout"
+                    OnClick ="=ToutRien(True)"
+                End
+                Begin Rectangle
+                    Visible = NotDefault
+                    SpecialEffect =1
+                    BackStyle =0
+                    OverlapFlags =215
+                    Left =1215
+                    Top =90
+                    Width =1665
+                    Height =450
+                    Name ="RecToutRien"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =30
+                    Top =840
+                    Width =1110
+                    Height =240
+                    Name ="Texte18"
+                    Caption ="Code"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    Left =1200
+                    Top =840
+                    Width =3585
+                    Height =240
+                    Name ="Texte12"
+                    Caption ="Nom"
+                End
+                Begin OptionGroup
+                    SpecialEffect =2
+                    OverlapFlags =215
+                    Left =3555
+                    Top =90
+                    Width =2400
+                    Height =630
+                    TabIndex =2
+                    Name ="CadMode"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="1"
+                    Begin
+                        Begin OptionButton
+                            OverlapFlags =223
+                            Left =3690
+                            Top =210
+                            Width =2100
+                            Height =225
+                            OptionValue =1
+                            Name ="OptArchvage"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =3690
+                            Top =450
+                            Width =232
+                            Height =217
+                            OptionValue =2
+                            Name ="OptDesarchiver"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =270
+            BackColor =12632256
+            Name ="Détail"
+            Begin
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =6015
+                    Top =45
+                    Width =202
+                    Name ="ChkArchiver"
+                    ControlSource ="=Not isnull(dlookup(\"TDéb_Code\",\"TMP_DEBITEUR\",\"TDéb_Code='\" & [Déb_Code] "
+                        "& \"'\"))"
+                    StatusBarText ="Flag"
+                    OnMouseDown ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =4845
+                    Top =15
+                    Width =1116
+                    Height =240
+                    TabIndex =1
+                    Name ="TxtDéb_Situation"
+                    ControlSource ="Déb_Situation"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =15
+                    Top =15
+                    Width =1101
+                    Height =240
+                    TabIndex =2
+                    Name ="TxtDéb_Code"
+                    ControlSource ="Déb_Code"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1200
+                    Top =15
+                    Width =3576
+                    Height =240
+                    TabIndex =3
+                    Name ="TxtDéb_Nom"
+                    ControlSource ="Déb_Nom"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =675
+            BackColor =12632256
+            Name ="PiedFormulaire"
+            Begin
+                Begin CommandButton
+                    Default = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =1515
+                    Top =120
+                    Width =1485
+                    Height =450
+                    FontWeight =300
+                    Name ="CmdArchiver"
+                    Caption ="Archiver"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    Enabled = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =3240
+                    Top =120
+                    Width =1485
+                    Height =450
+                    FontWeight =300
+                    TabIndex =1
+                    Name ="CmdDesarchiver"
+                    Caption ="Désarchiver"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FrmDebiteurArchivage.cls"

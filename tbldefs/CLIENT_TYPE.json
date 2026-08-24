@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "CLIENT_TYPE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[CT_Nom]"
+    "PrimaryKey": "[CT_Nom]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Types De Clients"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Types De Clients"
+      }
+    }
   }
 }

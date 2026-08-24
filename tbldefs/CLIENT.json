@@ -8,6 +8,22 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "CLIENT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Cli_Code]"
+    "PrimaryKey": "[Cli_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Clients"
+      },
+      "OrderByOn": {
+        "Type": 1,
+        "Value": true
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Clients"
+      }
+    }
   }
 }

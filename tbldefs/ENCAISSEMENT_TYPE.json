@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "ENCAISSEMENT_TYPE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[ETy_Code]"
+    "PrimaryKey": "[ETy_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Types D'Encaissements"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Types D'Encaissements"
+      }
+    }
   }
 }

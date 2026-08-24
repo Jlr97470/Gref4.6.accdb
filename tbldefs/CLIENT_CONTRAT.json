@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "CLIENT_CONTRAT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[CC_Code_Client], [CC_Date_Contrat]"
+    "PrimaryKey": "[CC_Code_Client], [CC_Date_Contrat]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Historique Des Contrats Clients"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Historique Des Contrats Clients"
+      }
+    }
   }
 }

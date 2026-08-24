@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "REGLEMENT_DETAIL",
     "Attributes": 1073741824,
-    "PrimaryKey": "[RegD_Reg_Id], [RegD_Déb_Code], [RegD_ETy_Mode]"
+    "PrimaryKey": "[RegD_Reg_Id], [RegD_Déb_Code], [RegD_ETy_Mode]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Details Des Reglements"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Details Des Reglements"
+      }
+    }
   }
 }

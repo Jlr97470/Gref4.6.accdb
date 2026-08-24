@@ -8,6 +8,60 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "DEBITEUR",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Déb_Code]"
+    "PrimaryKey": "[Déb_Code]",
+    "FieldProperties": {
+      "Déb_Code": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 1290
+        }
+      },
+      "Déb_Nom": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 2565
+        }
+      },
+      "Déb_Frais_m1": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 1440
+        }
+      },
+      "Déb_Frais_m2": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 1440
+        }
+      },
+      "Déb_Mont_Prin_m1": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 1890
+        }
+      },
+      "Déb_Mont_Prin_m2": {
+        "ColumnWidth": {
+          "Type": 3,
+          "Value": 1890
+        }
+      }
+    },
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Debiteurs"
+      },
+      "OrderByOn": {
+        "Type": 1,
+        "Value": true
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Debiteurs"
+      }
+    }
   }
 }

@@ -1,0 +1,9 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "SelClientAnalyseSituation"
+  },
+  "Items": {
+    "QueryType": 0
+  }
+}

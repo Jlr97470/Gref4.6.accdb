@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "ADRESSE_TYPE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[AT_TypeAdresse_ID]"
+    "PrimaryKey": "[AT_TypeAdresse_ID]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Type D'Adresse"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Type D'Adresse"
+      }
+    }
   }
 }

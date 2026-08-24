@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "TMP_RELANCE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[TRel_Déb_Code], [TRel_Niv_relance]"
+    "PrimaryKey": "[TRel_Déb_Code], [TRel_Niv_relance]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Debiteurs A Relancé Temporaire"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Debiteurs A Relancé Temporaire"
+      }
+    }
   }
 }

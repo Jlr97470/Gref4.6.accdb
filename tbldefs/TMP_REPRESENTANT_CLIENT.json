@@ -8,6 +8,26 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "TMP_REPRESENTANT_CLIENT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[TRCRep_Code], [TRCCli_Code]"
+    "PrimaryKey": "[TRCRep_Code], [TRCCli_Code]",
+    "FieldProperties": {
+      "TRC_Flag": {
+        "Format": {
+          "Type": 10,
+          "Value": "Yes/No"
+        }
+      }
+    },
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Clients Par Representants Temporaire"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Clients Par Representants Temporaire"
+      }
+    }
   }
 }

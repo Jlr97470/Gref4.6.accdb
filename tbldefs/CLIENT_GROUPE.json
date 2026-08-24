@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "CLIENT_GROUPE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[CG_Id]"
+    "PrimaryKey": "[CG_Id]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Groupes Des Clients"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Groupes Des Clients"
+      }
+    }
   }
 }

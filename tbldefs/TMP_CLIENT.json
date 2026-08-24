@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "TMP_CLIENT",
     "Attributes": 1073741824,
-    "PrimaryKey": "[TCli_Code]"
+    "PrimaryKey": "[TCli_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Clients Temporaire"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Clients Temporaire"
+      }
+    }
   }
 }

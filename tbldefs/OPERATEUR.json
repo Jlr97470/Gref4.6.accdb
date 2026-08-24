@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "OPERATEUR",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Ope_Code]"
+    "PrimaryKey": "[Ope_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Operateurs"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Operateurs"
+      }
+    }
   }
 }

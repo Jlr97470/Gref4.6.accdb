@@ -8,7 +8,7 @@
           0,
           1
         )
-      )<= [Cli_Nb_Relance],
+      ) <= [Cli_Nb_Relance],
       1,
       [CG_Code_Action] = 1
       And (
@@ -17,7 +17,7 @@
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And IsNull([AD_Tel])
       And IsNull([AD_Tel2]),
       3,
@@ -28,7 +28,7 @@
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And (
         Not IsNull([AD_Tel])
         Or Not IsNull([AD_Tel2])
@@ -47,7 +47,7 @@
           0,
           1
         )
-      )<= [Cli_Nb_Relance],
+      ) <= [Cli_Nb_Relance],
       (
         [Déb_niv_relance] + IIf(
           IsNull([Déb_Date_der_rel]),
@@ -62,7 +62,7 @@
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And IsNull([AD_Tel])
       And IsNull([AD_Tel2]),
       7,
@@ -73,7 +73,7 @@
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And (
         Not IsNull([AD_Tel])
         Or Not IsNull([AD_Tel2])
@@ -102,7 +102,7 @@ WHERE
     AND (
       (
         ADRESSE_DEBITEUR.AD_TypeAdresse_ID
-      )= DLookUp(
+      ) = DLookUp(
         'Adresse_Courrier', 'PARAMETRE_GREF'
       )
     )
@@ -117,7 +117,7 @@ GROUP BY
           0,
           1
         )
-      )<= [Cli_Nb_Relance],
+      ) <= [Cli_Nb_Relance],
       1,
       [CG_Code_Action] = 1
       And (
@@ -126,7 +126,7 @@ GROUP BY
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And IsNull([AD_Tel])
       And IsNull([AD_Tel2]),
       3,
@@ -137,7 +137,7 @@ GROUP BY
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And (
         Not IsNull([AD_Tel])
         Or Not IsNull([AD_Tel2])
@@ -156,7 +156,7 @@ GROUP BY
           0,
           1
         )
-      )<= [Cli_Nb_Relance],
+      ) <= [Cli_Nb_Relance],
       (
         [Déb_niv_relance] + IIf(
           IsNull([Déb_Date_der_rel]),
@@ -171,7 +171,7 @@ GROUP BY
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And IsNull([AD_Tel])
       And IsNull([AD_Tel2]),
       7,
@@ -182,7 +182,7 @@ GROUP BY
           0,
           1
         )
-      )> [Cli_Nb_Relance]
+      ) > [Cli_Nb_Relance]
       And (
         Not IsNull([AD_Tel])
         Or Not IsNull([AD_Tel2])

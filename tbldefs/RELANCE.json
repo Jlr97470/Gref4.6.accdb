@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "RELANCE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[Rel_Code_Action], [Rel_N°]"
+    "PrimaryKey": "[Rel_Code_Action], [Rel_N°]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Relances"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Relances"
+      }
+    }
   }
 }

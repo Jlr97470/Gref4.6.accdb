@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "TMP_IRRECOUVRABLE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[TIrr_Déb_Code]"
+    "PrimaryKey": "[TIrr_Déb_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Debiteurs Irrecouvrables Temporaire"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Selection De Debiteurs Irrecouvrables Temporaire"
+      }
+    }
   }
 }

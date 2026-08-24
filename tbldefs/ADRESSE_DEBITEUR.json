@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "ADRESSE_DEBITEUR",
     "Attributes": 1073741824,
-    "PrimaryKey": "[AD_Code_Débiteur], [AD_TypeAdresse_ID]"
+    "PrimaryKey": "[AD_Code_Débiteur], [AD_TypeAdresse_ID]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Adresse Des Debiteurs"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Adresse Des Debiteurs"
+      }
+    }
   }
 }

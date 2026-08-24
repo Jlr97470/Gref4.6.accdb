@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "ENCAISSEMENT_MODE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[EMo_Code]"
+    "PrimaryKey": "[EMo_Code]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Modes D'Encaissements"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Modes D'Encaissements"
+      }
+    }
   }
 }

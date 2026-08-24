@@ -8,6 +8,18 @@
     "Connect": ";DATABASE=rel:TGREF.accdb",
     "SourceTableName": "MOTIF_IMPAYE",
     "Attributes": 1073741824,
-    "PrimaryKey": "[MI_Grille], [MI_Code], [MI_Code_Gestion]"
+    "PrimaryKey": "[MI_Grille], [MI_Code], [MI_Code_Gestion]",
+    "TableProperties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Grilles Des Motifs Des Impayes"
+      }
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Grilles Des Motifs Des Impayes"
+      }
+    }
   }
 }
